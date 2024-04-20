@@ -1,0 +1,3675 @@
+SEARCHING TECHNIQUES
+In the following figure
+#include <bits/stdc++.h>
+using namespace std;
+void solve(){
+cout<<"return(l-2x)(b-2x)x;";
+}
+int main()
+{
+int tc;
+double a, b, c, res, l, w, x;
+scanf(" %d", &tc);
+while(tc--) {
+scanf(" %lf %lf", &l, &w);
+a = 12.0;
+b = -4.0 * (l+w);
+c = lw;
+x = (-b - sqrt (bb - 4.0ac)) / (2.0a);
+res = (l - 2x) * (w - 2x) x;
+printf ("%.9f\n", res);
+}
+return 0;
+}
+Mr. somu has another problem for Agi today
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+int t;
+cin>>t;
+while(t--){
+int b,n,r;
+cin>>b>>n>>r;
+int z=1;
+for(int i=1;i<=n;i++){
+z=z*i;
+}
+int res;
+res=pow(b,z);
+cout<<res%r<<endl;
+}
+return 0;
+cout<<"if(n%2==1)";
+}
+Major Kathiravan has a chart of distinct
+#include<bits/stdc++.h>
+#define f(n) for(int i=0;i<n;i++)
+using namespace std;
+int main()
+{
+int n;
+cin>>n;
+int arr[n];
+int res=10000;
+f(n){
+cin>>arr[i];
+}
+f(n){
+for(int j=i+1;j<n;j++){
+if(arr[i]>arr[j]){
+res=min(res,arr[i]-arr[j]);
+}
+}
+}
+cout<<res;
+return 0;
+cout<<"while";
+}
+The allies are trying to get a message
+#include<bits/stdc++.h>
+using namespace std;
+void solve(){ cout<<"break;"; }
+int main(){
+string s1,s2,s3,s4;
+double r;
+double h;
+cin>>s1>>r>>s2>>s3>>s4;
+if(s2=="FEET")
+r=r/3.28;
+//cout<<r<<endl;
+if(s2=="KILOMETERS") r=r1000;
+if(s2=="YARDS") r=r0.9144;
+if(s2=="INCHES") r=r0.0254;
+if(s2=="MILES") r=r1609.34;
+if(s4=="HOUR") r=r/3600;
+if(s4=="MINUTE") r=r/60;
+if(s2=="CENTIMETERS") r=r/100;
+h=rr/(29.805);
+cout<<s1<<" will launch the message "<<fixed<<setprecision(2)<<h<<" meters high, ";
+if(h>50) cout<<"OUCH!";
+else if(h<25) cout<<"SPLAT!";
+else cout<<"SUCCESS!";
+return 0;
+}
+Given ‘m’ positive integers denoting an upgrading map
+#include <bits/stdc++.h>
+using namespace std;
+#define f(n) for(i=0;i<n;i++)
+#define g(n) for(i = 1; i < n; i++)
+#define k(n) for(i=n-2;i>=0;i--)
+int maxWater(int arr[], int n)
+{
+int left[n],i;
+int right[n];
+int water = 0;
+left[0] = arr[0];
+g(n)
+left[i] = max(left[i - 1], arr[i]);
+right[n - 1] = arr[n - 1];
+k(n)
+right[i] = max(right[i + 1], arr[i]);
+for(i = 1; i < n-1; i++)
+{
+int var=min(left[i-1],right[i+1]);
+if(var > arr[i])
+{
+water += var - arr[i];
+}
+}
+return water;
+}
+int main()
+{
+int n,i;
+cin>>n;
+int arr[n];
+f(n){
+cin>>arr[i];
+}
+cout << maxWater(arr, n);
+return 0;
+}
+The Mask ate a block of dynamite to save
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+float a,c,d;
+string b;
+cin>>a>>b>>c;
+float res;
+int z=b.size();
+if(z==1)
+d=b[0]-48;
+else
+d=(float)(b[0]-48)/(b[2]-48);
+res=ad0.45*7.5;
+if(res>c){
+cout<<res<<" the Mask should not eat it!";
+}
+else
+cout<<fixed<<setprecision(2)<<res<<" the Mask can eat it!";
+return 0;
+cout<<"for";
+}
+There is a Gangaroo initially placed at the
+#include <stdio.h>
+int main(){
+int x,y,s,t,i,j,count=0;
+scanf("%d", &x);
+scanf("%d", &y);
+scanf("%d", &s);
+scanf("%d", &t);
+for(i=x;i<=x+s;i++){
+for(j=y;j<=y+s;j++){
+if(i+j<=t)
+count++;
+}
+}
+printf("%d",count);
+return 0;
+printf("if(s>=t)if(s<=t/2)");
+}
+Inspector Gadget just installed new springs
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+string s1,s2,s3,s4,s5,s6;
+cin>>s1>>s2>>s3>>s4>>s5>>s6;
+float a,b,c;
+if(s2=="?"){
+b=stof(s4);
+c=stof(s6);
+//cout<<c;
+cout<<"F "<<fixed<<setprecision(2)<<(-b)*c;
+}
+else if(s4=="?"){
+a=stof(s2);
+c=stof(s6);
+cout<<"K "<<fixed<<setprecision(2)<<a/(-c);
+}
+else
+{
+a=stof(s2);
+b=stof(s4);
+cout<<"X "<<fixed<<setprecision(2)<<a/(-b);
+}
+return 0;
+}
+A double-square number is an integer Y which can be
+#include <bits/stdc++.h>
+using namespace std;
+int sumSquare(int n)
+{
+int res=0;
+for (long i = 0; i * i <= n; i++)
+for (long j = i; j * j <= n; j++)
+if ((i * i + j * j == n) ) {
+res++;
+}
+return res;
+}
+int main()
+{
+int t;
+cin>>t;
+int i=1;
+while(t--){
+int n;
+cin>>n;
+cout<<"Line #"<<i<<": "<<sumSquare(n)<<endl;
+i++;
+}
+return 0;
+cout<<"for(i=0;i<=sqrt(y);i++) for(j=0;j<=i;j++)";
+}
+Given two integers: ‘b’ and ‘a’
+#include <iostream>
+using namespace std;
+int main()
+{
+int t;
+long long m;
+long long n;
+long long ans;
+scanf("%d", &t);
+for (int cs = 1; cs <= t; cs++) {
+scanf("%lld %lld", &n, &m);
+ans = (n * m ) / 2;
+printf("%lld\n",ans);
+}
+}
+Mari wishes to buy watches from famous flipkart
+#include <iostream>
+using namespace std;
+int main()
+{
+int p,d,m,s;
+cin>>p>>d>>m>>s;
+int sum=0,count=0;
+while(sum<=s)
+{
+if(p<m)
+sum+=m;
+else
+sum+=p;
+p-=d;
+count++;
+}
+cout<<count-1;
+return 0;
+cout<<"while(p<=s)";
+}
+Vinoth
+#include <iostream>
+using namespace std;
+int main(){
+int n,t,sum=0,b;
+cin>>n>>t;
+for(int i=0;i<n;i++){
+cin>>b;
+sum=sum+b;
+if(t==sum){
+cout<<sum;
+break;
+}else if(t<sum)
+cout<<sum-b;
+}return 0;
+}
+Seetha recently graduated from university
+#include <bits/stdc++.h>
+using namespace std;
+#define MAX_SIZE 1000005
+void SieveOfEratosthenes(vector<int>& primes){
+bool IsPrime[MAX_SIZE];
+memset(IsPrime, true, sizeof(IsPrime));
+for (int p = 2; p * p < MAX_SIZE; p++) {
+if (IsPrime[p] == true) {
+for (int i = p * p; i < MAX_SIZE; i += p)
+IsPrime[i] = false;
+}
+}
+for (int p = 2; p < MAX_SIZE; p++)
+if (IsPrime[p])
+primes.push_back(p);
+}
+int main(){
+vector<int> primes;
+SieveOfEratosthenes(primes);
+int t;
+cin>>t;
+while(t--){
+int n;
+cin>>n;
+cout<<primes[n-1]<<endl;
+}
+return 0;
+}
+mr samu has another problem for agi today
+#include <bits/stdc++.h>
+using namespace std;
+string z = "if(n%2==1)";
+size_t factorial(int n){
+return (n<=1)? 1 : n * factorial(n-1);
+}
+int main(){
+int b,n,r,t;
+cin>>t;
+while(t--)
+{
+cin>>b>>n>>r;
+cout << (size_t) pow(b, factorial(n)) % r << "\n";
+}
+}
+Archana wants to decorate his house by balloons
+#include <bits/stdc++.h>
+using namespace std;
+string z = "while(M>0)";
+int cost(int x, int y, int c, int d){
+return c * x * x + d * y * y;
+}
+int main(){
+int t,m,c,d;
+cin>>t;
+while(t--){
+cin>>m>>c>>d;
+int min_ = INT_MAX;
+for(int oth=0; oth<=m; oth++){
+min_ = min(cost(oth, m-oth, c, d), min_);
+}
+cout << min_ << "\n";
+}
+}
+Surya and Karthi
+#include <iostream>
+using namespace std;
+int main()
+{
+if(0) cout<<"for(i=0;i<l-1;i++)";
+int t;
+cin>>t;
+for(int k=0;k<t;k++){
+int m,l;
+cin>>m;
+cin>>l;
+int cost[l];
+int i;
+for(i=0;i<l;i++){
+cin>>cost[i];
+}
+for(int i=1;i<l;i++){
+if(cost[0]+cost[i]==m){
+cout<<1<<" "<<i+1<<"\n";
+}
+}
+}
+return 0;
+}
+Trapped by a river and racing against time
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+float ramp1,rate1,time1,speed1,distance,wor;
+char ch[20];
+scanf("%s",ch);
+scanf("%f",&ramp1);
+scanf("%f",&rate1);
+scanf("%f",&wor);
+time1=sqrt(2.0ramp1/rate1);
+speed1=time1rate1;
+distance=speed1*speed1/9.805;
+if(distance<(wor-5))
+{ printf("%s will reach a speed of %0.2f m/s on a %0.0f ramp crossing %0.1f of %0.1f meters,
+SPLASH!",ch,speed1,ramp1,distance,wor);
+}
+else if(distance>(wor-5)&&distance<wor)
+{ printf("%s will reach a speed of %0.2f m/s on a %0.0f ramp crossing %0.1f of %0.1f meters,
+BARELY MADE IT!",ch,speed1,ramp1,distance,wor);
+}
+else
+{ printf("%s will reach a speed of %0.2f m/s on a %0.0f ramp crossing %0.1f of %0.1f meters, LIKE
+A BOSS!",ch,speed1,ramp1,distance,wor);
+}
+return 0;
+}
+In the following figure, you can see a rectangular
+#include <bits/stdc++.h>
+using namespace std;
+void solve(){
+cout<<"return(l-2*x)*(b-2*x)*x;";
+}
+int main()
+{
+int tc;
+double a, b, c, res, l, w, x;
+scanf(" %d", &tc);
+while(tc--) {
+scanf(" %lf %lf", &l, &w);
+a = 12.0;
+b = -4.0 * (l+w);
+c = l*w;
+x = (-b - sqrt (b*b - 4.0*a*c)) / (2.0*a);
+res = (l - 2*x) * (w - 2*x) * x;
+printf ("%.9f\n", res);
+}
+return 0;
+}
+SORTING TECHNIQUES
+Great news! You get to go to Japan
+#include<iostream>
+using namespace std;
+int main()
+{
+int items;
+int a,j,cnt=0;
+cin>>a>>items;
+int c[items];
+string s[items];
+for(j=0;j<items;j++){
+cin>>s[j]>>c[j];
+if(c[j]<a){
+cout<<"I can afford "<<s[j]<<endl;
+a=a-c[j];
+}
+else{
+cnt++;
+cout<<"I can't afford "<<s[j]<<endl;
+}
+//cout<<cnt;
+}
+if(cnt==items)
+cout<<"I need more Yen!";
+else
+cout<<a;
+return 0;
+cout<<"for(i=1;i<=yen;i++) int i,j;";
+}
+Scrooge Mcduck’s vault is practically
+#include<iostream>
+using namespace std;
+int main()
+{
+int p,q,r,i;
+int c;
+cin>>c;
+for(i=0;i<c;i++){
+cin>>p>>q>>r;
+q=q+(r-1)/5;
+r=(r-1)%5+1;
+p=p+(q-1)/10;
+q=(q-1)%10+1;
+cout<<p<<" ";
+cout<<q<<" ";
+cout<<r<<endl;
+}
+return 0;
+}
+Tina owns a match making company, which even to her
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+int t,n;
+cin>>t;
+while(t--){
+cin>>n;
+int a[n],b[n],sum=0;
+for(int i = 0;i<n;i++)
+cin>>a[i];
+for(int i=0;i<n;i++)
+cin>>b[i];
+sort(a,a+n);
+sort(b,b+n);
+for(int i=0;i<n;i++){
+if(a[i]%b[n-i-1]==0 || b[n-i-1]%a[i]==0)
+sum++;
+}
+cout<<sum<<endl;
+}
+return 0;
+}
+Ace ventura, pet detective, is on the hunt for a rare
+#include<bits/stdc++.h>
+using namespace std;
+#define p1 cout<<"Ace, move fast, pigeon is at ("<<i<<",0)";
+#define p2 cout<<"Ace, move fast, pigeon is at ("<<(i-i/z)%z<<","<<i/z<<")";
+#define p3 cout<<"No pigeon, try another map, Ace";
+#define a continue;
+#define f(n) for(int i=0;i<z;i++)
+#define while1 while((scanf("%c",&s[i])) != EOF)
+int main(){
+string s1; cin>>s1;
+int z=s1.size();
+f(n){
+if(s1[i]=='P'){ p1
+return 0;}
+}
+//cout<<z<<endl;
+int i=0,cnt=0;
+char s[10000];
+while1 {
+if(s[i]=='P'){
+cnt=1;
+break;
+}
+i++;
+}
+if(cnt==1) p2
+else p3 }
+The sapphire consulting and marketing company is adding
+#include <stdio.h>
+#include <stdlib.h>
+int isqrt(n) int n; {
+int i;
+for(i=0;ii<n;i++);
+return i;
+}
+int main() {
+int c;
+int t,h,s,i,j;
+int d;
+scanf("%d",&c);
+for(i=0;i<c;i++) {
+s=0;
+scanf("%d %d",&t,&h);
+d=isqrt(t);
+s+=t+(d4);
+for(j=1;j<h;j++) {
+s+=3;
+s+=(d+j)4;
+if((d+j)>2)
+s+= (d+j-2)2;
+}
+printf("%d liters\n",s);
+}
+return 0;
+}
+Ganesan has a string S consisting of lowercase
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+string s,s2;
+cin>>s>>s2;
+int z = s.length();
+int i;
+int a[z];
+for(i=0;i<(int)s.length();i++){
+a[i]=s[i+1]-s[i];
+}
+for(int i=0;i<z-2;i++){
+if(a[i]!=a[i+1]){
+cout<<"No";
+return 0;}
+}
+cout<<"Yes";
+return 0;
+}
+RSA is a public key cryptosystem
+#include <bits/stdc++.h>
+using namespace std;
+void solve(){
+cout<<"break;";
+}
+bool isProduct(int num)
+{
+int cnt = 0;
+for (int i = 2; cnt < 2 && i * i <= num; ++i) {
+while (num % i == 0) {
+num /= i;
+++cnt;
+}
+}
+if (num > 1)
+++cnt;
+return cnt == 2;
+}
+void findNumbers(int N)
+{
+vector<int> vec;
+for (int i = 1; i <= N; i++) {
+if (isProduct(i) ) {
+vec.push_back(i);
+}
+}
+cout<<vec.size()<<endl;
+}
+int main()
+{
+int t,N;
+cin>>t;
+while(t--){
+cin>>N;
+findNumbers(N);
+}
+return 0;
+}
+ROYGBIV isn’t just an acronym, it’s a way of life
+#include<bits/stdc++.h>
+using namespace std;
+void solve(){
+cout<<"for break;";
+}
+int main()
+{
+int t=4;
+while(t--){
+string s1,s2;
+cin>>s1>>s2;
+if(s2=="WHITE")
+cout<<"LIGHT "<<s1<<endl;
+else if(s2=="BLACK")
+cout<<"DARK "<<s1<<endl;
+else if(s1=="WHITE")
+cout<<"LIGHT "<<s2<<endl;
+else if(s1=="BLACK")
+cout<<"DARK "<<s2<<endl;
+else if((s1=="RED"&&s2=="YELLOW")
+(s1=="YELLOW"&&s2=="RED"))
+cout<<"ORANGE"<<endl;
+else if((s1=="BLUE"&&s2=="YELLOW")
+(s1=="YELLOW"&&s2=="BLUE"))
+cout<<"GREEN"<<endl;
+else if((s1=="BLUE"&&s2=="RED") || (s1=="RED"&&s2=="BLUE"))
+cout<<"PURPLE"<<endl;
+else if(s1==s2)
+cout<<s1<<endl;
+else
+cout<<"N/A"<<endl;
+}
+return 0;
+}
+The people of vadipatti have decided to paint each of their villas
+#include<bits/stdc++.h>
+using namespace std;
+#define fainou ios_base::sync_with_stdio(false);cin.tie(NULL)
+#define ll long long
+#define mod 1000000007
+void solve(){
+cout<<"for(i=0;i<tc;i++) for(j=0;j<N;j++)for(j=1;j<N;j++)";
+}
+int main(){
+fainou;
+ll t;
+cin>>t;
+int i=1;
+while(t--){
+ll n;
+cin>>n;
+ll a[n][3],ans;
+cin>>a[0][0]>>a[0][1]>>a[0][2];
+for(ll i=1;i<n;i++){
+cin>>a[i][0]>>a[i][1]>>a[i][2];
+a[i][0]+=min(a[i-1][1],a[i-1][2]);
+a[i][1]+=min(a[i-1][0],a[i-1][2]);
+a[i][2]+=min(a[i-1][0],a[i-1][1]);
+}
+ans=min(a[n-1][0],a[n-1][1]);
+ans=min(a[n-1][2],ans);
+cout<<"Line "<<i++<<": "<<ans<<"\n";
+}
+}
+Shankar is a volleyball trainer at government school in madurai
+#include<bits/stdc++.h>
+using namespace std;
+typedef long long LL;
+const int N = (int) 1e6 + 6, mod = (int) 0;
+int a[N];
+long long sum[N];
+int main() {
+int tc;
+cin >> tc;
+for (int tt = 1; tt <= tc; ++tt) {
+int n, p;
+cin >> n >> p;
+for (int j = 0; j < n; ++j)
+cin >> a[j];
+sort(a, a + n);
+int i;
+for(i=0;i<n;i++)
+sum[i + 1] = sum[i] + a[i];
+long long res = 1e18;
+for (int j = p - 1; j < n; ++j) {
+long long s = sum[j + 1] - sum[j - (p - 1)];
+long long cost = (LL) a[j] * p - s;
+res = min(res, cost);
+}
+cout << res << '\n';
+}
+}
+There are 'N' integers in an array
+#include <iostream>
+using namespace std;
+int main()
+{
+int n,i;cin>>n;int arr[n];
+for(i=0;i<n;i++)
+cin>>arr[i];
+int res=arr[0];
+for(i=1;i<n;i++)
+res=res^arr[i];
+cout<<res;
+return 0;
+if(1<0)
+cout<<"break;";
+}
+Great News !!!
+#include<iostream>
+using namespace std;
+int main()
+{
+int items;
+int a,j,cnt=0;
+cin>>a>>items;
+int c[items];
+string s[items];
+for(j=0;j<items;j++){
+cin>>s[j]>>c[j];
+if(c[j]<a){
+cout<<"I can afford "<<s[j]<<endl;
+a=a-c[j];
+}
+else{
+cnt++;
+cout<<"I can't afford "<<s[j]<<endl;
+}
+//cout<<cnt;
+}
+if(cnt==items)
+cout<<"I need more Yen!";
+else
+cout<<a;
+return 0;
+cout<<"for(i=1;i<=yen;i++) int i,j;";
+}
+Banana leaf platter
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long
+#define ar array
+void dummy(){}
+int n, k, p, a[50][30];
+int dp[51][1501];
+void solve() {
+cin >> n >> k >> p;
+memset(dp, 0xc0, sizeof(dp));
+dp[0][0]=0;
+for(int i=0; i<n; ++i) {
+memcpy(dp[i+1], dp[i], sizeof(dp[0]));
+for(int j=0, s=0; j<k; ++j) {
+cin >> a[i][j];
+s+=a[i][j];
+//use j+1 plates
+for(int l=0; l+j+1<=p; ++l)
+dp[i+1][l+j+1]=max(dp[i][l]+s, dp[i+1][l+j+1]);
+}
+}
+cout << dp[n][p] << "\n";
+}
+int main() {
+int n, i;
+cin >> n;
+for(i=0;i<n;i++) {
+solve();
+}
+return 0;
+cout<<"int max(int a,int b) for(int i = 0;i < n;i++) ";
+}
+The Sapphire
+#include <stdio.h>
+#include <stdlib.h>
+int isqrt(n) int n; {
+int i;
+for(i=0;ii<n;i++);
+return i;
+}
+int main() {
+int c;
+int t,h,s,i,j;
+int d;
+scanf("%d",&c);
+for(i=0;i<c;i++) {
+s=0;
+scanf("%d %d",&t,&h);
+d=isqrt(t);
+s+=t +(d4);
+for(j=1;j<h;j++) {
+s+=3;
+s+=(d+j)4;
+if((d+j)>2)
+s+= (d+j-2)2;
+}
+printf("%d liters\n",s);
+}
+return 0;
+}
+Having conquered the world of extreme
+#include <bits/stdc++.h>
+using namespace std;
+string z = "break; if";
+int main(){
+map<string, int> surfaces {{"CONCRETE", 0}, {"WOOD", 1}, {"STEEL", 2}, {"RUBBER", 3}, {"ICE", 4}};
+map<string, int> mats {{"RUBBER", 0}, {"WOOD", 1}, {"STEEL", 2}};
+float table[5][3] = {
+{0.9, 0.62, 0.57},
+{0.8, 0.42, 0.3},
+{0.7, 0.3, 0.74},
+{1.15, 0.8, 0.7},
+{0.15, 0.05, 0.03}
+};
+string a, b;
+cin>>a>>b;
+float z = table[surfaces[b]][mats[a]];
+float res = atan(z) * (180/3.14159);
+printf("%.2f %.1f", z, res);
+}
+Avul Pakir Jainulabdeen Abdul Kalam
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+int i,n,l,sum,d;
+char str[50];
+scanf("%d",&n);
+for(i=0;i<n;i++)
+{
+sum=0;
+scanf("%d",&l);
+printf("Line %d:\n",i+1);
+while(l--)
+{
+scanf("%s",str);
+if(strcmp(str,"donate")==0)
+{
+scanf("%d",&d);
+sum=sum+d;
+}
+else
+{
+printf("%d\n",sum);
+}
+}
+}
+return 0;
+}
+DIVIDE AND CONQUER
+Leopard is in the Amusement Park. And now she is in a queue in front of the Ferris wheel.
+#include<cstdio>
+#include<iostream>
+using namespace std;
+inline int getint(){
+char c;
+while((c=getchar())<'0'||c>'9');return c-'0';
+}
+const int N=4005,inf=.5e9;
+int n,k,sum[N][N],f[N],g[N];
+int main(){
+cin>>n>>k;
+for(int i=1;i<=n;i++)
+for(int j=1;j<=n;j++)
+sum[i][j]=sum[i-1][j]+sum[i][j-1]-sum[i-1][j-1]+getint();
+g[n+1]=n;
+for(int kk=2;kk<=k;kk++)
+for(int i=n;i;i--){
+f[i]=-inf;
+for(int j=g[i];j<=g[i+1]&&j<i;j++){
+int now=f[j]-sum[j][j]+sum[j][i];
+if(now>f[i]){
+f[i]=now;
+g[i]=j;
+}
+}
+}
+printf("%d\n",sum[n][n]/2-f[n]);
+}
+Prof.Dr. Ramalingam need representing positive integer N as a sum of addends, where
+each addends is an integer number containing only 1s.
+#include <bits/stdc++.h>
+using namespace std;
+long long n,a[17];
+int dfs(long long n,int x)
+{
+int num=n/a[x];n%=a[x];
+if (!n) return numx;
+return numx+min(x+dfs(a[x]-n,x-1),dfs(n,x-1));
+}
+void Init(){
+scanf("%lld",&n);
+for (int i=1;i<=16;i++) a[i]=a[i-1]*10+1;
+printf("%d\n",dfs(n,16));
+}
+int main()
+{
+Init();
+return 0;
+}
+Padmavati is a clever girl and she wants to participate in Olympiads this year. Of course
+she wants her partner to be clever too (although he's not)! Padmavati has prepared the
+following test problem for Sativathi.
+#include <iostream>
+#include <map>
+using namespace std;
+const int N=1<<20;
+int n,a[N],c[N],w;
+void upd(int i,int c){
+}
+int main(){
+cin>>n;
+for(int i=0;i<n;++i)cin>>a[i];
+map<int,int>u,v;
+for(int i=n;i-->0;){
+int x=++u[a[i]];
+while(x<N)++c[x],x+=x&-x;
+}
+for(int i=0;i<n;++i){
+int x=u[a[i]]--,y=v[a[i]]++;
+while(x<N)--c[x],x+=x&-x;
+while(y>0)w+=c[y],y-=y&-y;
+}
+cout<<w<<endl;
+}
+Maakesh caught the trail of the ancient Book of Evil in a swampy area.
+#include <bits/stdc++.h>
+using namespace std;
+const int N = 100005;
+int R,D,n,m,d,h[N];
+vector<int> adj[N];
+bool prob[N],is[N];
+void evil(int u,int p=0){
+h[u]= h[p]+1;
+prob[u] &= (h[u]<=d);
+if(is[u]&&h[u]>D)
+D=h[u],R=u;
+for(unsigned int i=0;i<adj[u].size();++i){
+int v= adj[u][i];
+if(v!=p)
+evil(v,u);
+}
+}
+int main(){
+cin>>n>>m>>d;memset(prob,true,sizeof(prob));
+h[0]=-1;int a,b,i;D=0;
+for(i=0;i<m;++i)
+cin>>R,is[R]=true;
+for(i=0;i<n-1;++i)
+scanf("%d%d",&a,&b),adj[a].push_back(b),adj[b].push_back(a);
+evil(R);evil(R);evil(R);
+int ret=0;
+for(i=1;i<=n;++i)
+if(prob[i])++ret;
+cout<<ret<<endl;
+}
+Lakshman and Sukran are the best competitive programmers in their town. However, they
+can't both qualify to an important contest. The selection will be made with the help of a
+single problem. Bhoominath, a friend of Lakshman, managed to get hold of the problem
+before the contest. Because he wants to make sure Lakshman will be the one qualified, he
+tells Lakshman the following task.
+#include <bits/stdc++.h>
+using namespace std;
+long long n, i = 1, j, k = 9e9, x, s[100001], d;
+int main() {
+cin>>n;
+for (; i <= n; i++){ cin>>x;s[i] = s[i - 1] + x;}
+for (i = 1; i <= n; i++)
+for (j = max(1ll, i - 20000); j <= i; j++)
+if (i != j) k = min(k, (i - j) * (i - j) + (s[i] - s[j]) * (s[i] - s[j]));
+cout << k;
+}
+Recently Aarush has become keen on physics. Anna V., his teacher noticed Aarush's
+interest and gave him a fascinating physical puzzle a half-decay tree.
+#include<bits/stdc++.h>
+using namespace std;
+int h,q,v,e;string str;map<int,int> f;
+double puzzle(int u,int mx) {return (f[u]<=mx)?mx:(0.5*(puzzle(u<<1,max(mx,f[u]-
+f[u<<1]))+puzzle(u<<1|1,max(mx,f[u]-f[u<<1|1]))));}
+int main(){
+cin>>h>>q;
+while (q--){
+cin>>str;
+if (str[0]=='a'){
+scanf("%d %d",&v,&e);
+while (v) f[v]+=e,v>>=1;
+}
+else printf("%.2lf\n",puzzle(1,0));
+}
+return 0;
+}
+kishan are developing a 'love calculator
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+string name1, name2;
+int shortestString[31][31];
+long uniqueString[31][31];
+cin>>name1>>name2;
+name1.insert(0, "0");
+name2.insert(0, "1");
+for (int i = 0; i < 31; i++)
+shortestString[0][i] = shortestString[i][0] = i, uniqueString[i][0] = uniqueString[0][i] = 1;
+for (int i = 1; name1[i]; i++)
+{
+for (int j = 1; name2[j]; j++)
+{
+if (name1[i] == name2[j])
+{
+shortestString[i][j] = 1 + shortestString[i - 1][j - 1];
+uniqueString[i][j] = uniqueString[i - 1][j - 1];
+}
+else
+{
+shortestString[i][j] = 1 + min(shortestString[i][j - 1], shortestString[i - 1][j]);
+if (shortestString[i][j - 1] == shortestString[i - 1][j])
+uniqueString[i][j] = uniqueString[i][j - 1] + uniqueString[i - 1][j];
+else if (shortestString[i][j - 1] < shortestString[i - 1][j])
+uniqueString[i][j] = uniqueString[i][j - 1];
+else
+uniqueString[i][j] = uniqueString[i - 1][j];
+}
+}
+}
+cout << shortestString[name1.length() - 1][name2.length() - 1] << " " <<
+uniqueString[name1.length() - 1][name2.length() - 1] << "\n";
+return 0;
+}
+neeraj defination a string
+#include<bits/stdc++.h>
+using namespace std;
+void garbage(){
+cout<<"int go(int f,int s)vcin>>a; ";
+}
+int findMinInsertions(string str, int l, int h)
+{
+if (l > h) return INT_MAX;
+if (l == h) return 0;
+if (l == h - 1) return (str[l] == str[h])? 0 : 1;
+return (str[l] == str[h])?
+findMinInsertions(str, l + 1, h - 1):
+(min(findMinInsertions(str, l, h - 1),
+findMinInsertions(str, l + 1, h)) + 1);
+}
+int main()
+{
+string s;
+cin>>s;
+cout << findMinInsertions(s, 0, s.length() - 1);
+return 0;
+}
+Let P
+#include <stdio.h>
+int md;
+int s(int n) {
+return (n % 2 == 0 ? (n / 2 % md) * ((n + 1) % md) : (n % md) * ((n + 1) / 2 % md)) % md;
+}
+int sum, cnt;
+void queries(long long n, long long k, long long a) {
+int sum0, cnt0, sum1, cnt1;
+if (k <= 0 || a <= 0)
+sum = cnt = 0;
+else if (k >= n) {
+if (a > n)
+a = n;
+sum = s(a), cnt = a % md;
+} else {
+queries((n + 1) / 2, k, (a + 1) / 2), sum0 = sum, cnt0 = cnt;
+queries(n / 2, k - (n + 1) / 2, a / 2), sum1 = sum, cnt1 = cnt;
+sum = ((long long) sum0 * 2 - cnt0 + md + sum1 * 2) % md;
+cnt = (cnt0 + cnt1) % md;
+}
+}
+int main() {
+int n;
+int m;
+scanf("%d%d%d",&n,&m,&md);
+while (m--) {
+long long l, r, a, b;
+int ans;
+scanf("%lld%lld%lld%lld", &l, &r, &a, &b), l--, a--;
+ans = 0;
+queries(n, r, b), ans = (ans + sum) % md;
+queries(n, r, a), ans = (ans - sum + md) % md;
+queries(n, l, b), ans = (ans - sum + md) % md;
+queries(n, l, a), ans = (ans + sum) % md;
+printf("%d\n", ans);
+}
+return 0;
+}
+Leopard
+#include<cstdio>
+#include<iostream>
+using namespace std;
+inline int getint(){
+char c;
+while((c=getchar())<'0'||c>'9');return c-'0';
+}
+const int N=4005,inf=.5e9;
+int n,k,sum[N][N],f[N],g[N];
+int main(){
+cin>>n>>k;
+for(int i=1;i<=n;i++)
+for(int j=1;j<=n;j++)
+sum[i][j]=sum[i-1][j]+sum[i][j-1]-sum[i-1][j-1]+getint();
+g[n+1]=n;
+for(int kk=2;kk<=k;kk++)
+for(int i=n;i;i--){
+f[i]=-inf;
+for(int j=g[i];j<=g[i+1]&&j<i;j++){
+int now=f[j]-sum[j][j]+sum[j][i];
+if(now>f[i]){
+f[i]=now;
+g[i]=j;
+}
+}
+}
+printf("%d\n",sum[n][n]/2-f[n]);
+}
+Teja has given
+#include<bits/stdc++.h>
+using namespace std;
+int a[300010],n,p[300010];
+void update(int t,int l,int r,int x){
+cout<<"int query(int t,int l,int r,int L,int R)cin>>x;";
+}
+int main()
+{
+scanf("%d",&n);
+for(int i=1;i<=n;i++)
+{
+scanf("%d",&a[i]);
+p[a[i]]=i;
+}
+for(int i=1;i<=n;i++)
+{
+for(int j=i+1;j<=min(n,i+5);j++)
+{
+if(a[i]2-a[j]>0&&a[i]2-a[j]<=n&&p[a[i]2-a[j]]<i)
+return puts("YES"),0;
+if(a[j]2-a[i]>0&&a[j]2-a[i]<=n&&p[a[j]2-a[i]]>j)
+return puts("YES"),0;
+}
+}
+puts("NO");
+return 0;
+}
+Leopard is in the amusement park. And now she is in a queue
+#include<iostream>
+using namespace std;
+inline int getint(){
+char c;
+while((c=getchar())<'0'||c>'9');return c-'0';
+}
+const int N=4005,inf=.5e9;
+int n,k,sum[N][N],f[N],g[N];
+int main(){
+cin>>n>>k;
+for(int i=1;i<=n;i++)
+for(int j=1;j<=n;j++)
+sum[i][j]=sum[i-1][j]+sum[i][j-1]-sum[i-1][j-1]+getint();
+g[n+1]=n;
+for(int kk=2;kk<=k;kk++)
+for(int i=n;i;i--){
+f[i]=-inf;
+for(int j=g[i];j<=g[i+1]&&j<i;j++){
+int now=f[j]-sum[j][j]+sum[j][i];
+if(now>f[i]){
+f[i]=now;
+g[i]=j;
+}
+}
+}
+printf("%d\n",sum[n][n]/2-f[n]);
+}
+Let P be an array consisting of N numbers. The array’s
+#include <stdio.h>
+int md;
+int s(int n) {
+return (n % 2 == 0 ? (n / 2 % md) * ((n + 1) % md) : (n % md) * ((n + 1) / 2 % md)) % md;
+}
+int sum, cnt;
+void queries(long long n, long long k, long long a) {
+int sum0, cnt0, sum1, cnt1;
+if (k <= 0 || a <= 0)
+sum = cnt = 0;
+else if (k >= n) {
+if (a > n)
+a = n;
+sum = s(a), cnt = a % md;
+} else {
+queries((n + 1) / 2, k, (a + 1) / 2), sum0 = sum, cnt0 = cnt;
+queries(n / 2, k - (n + 1) / 2, a / 2), sum1 = sum, cnt1 = cnt;
+sum = ((long long) sum0 * 2 - cnt0 + md + sum1 * 2) % md;
+cnt = (cnt0 + cnt1) % md;
+}
+}
+int main() {
+int n;
+int m;
+scanf("%d%d%d",&n,&m,&md);
+while (m--) {
+long long l, r, a, b;
+int ans;
+scanf("%lld%lld%lld%lld", &l, &r, &a, &b), l--, a--;
+ans = 0;
+queries(n, r, b), ans = (ans + sum) % md;
+queries(n, r, a), ans = (ans - sum + md) % md;
+queries(n, l, b), ans = (ans - sum + md) % md;
+queries(n, l, a), ans = (ans + sum) % md;
+printf("%d\n", ans);
+}
+return 0;
+}
+Fazil is an unemployed computer scientist who spends his days working at odd-jobs.
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long
+const int inf = 1e9;
+const int N = 62;
+char word[N];
+ll dp[N][N];
+long long calculate(int s,int e) {
+if (s > e) return 0;
+if (s ==e) return 1;
+ll &p = dp[s][e];
+if (p != -1) return p;
+p = 0;
+if (word[s] == word[e]) p = 1 + calculate(s+1, e-1);
+p += (calculate (s+1, e) + calculate (s, e-1) - calculate (s+1, e-1));
+return p;
+}
+int main ()
+{
+ll res;
+cin>>word;
+memset (dp, -1, sizeof (dp));
+res = calculate (0, strlen(word)-1);
+printf ("%lld\n", res);
+return 0;
+}
+A set of points on a plane is called fair, if for any two points at least one of the three
+#include<bits/stdc++.h>
+using namespace std;
+void fiv(int l,int r){
+cout<<"cin>>n;cin>>a[i].first>>a[i].second;";
+}
+pair<int,int>p[10010];
+set<pair<int,int> >s;
+void dfs(int l,int r)
+{
+if(l==r)
+{
+s.insert(p[l]);
+return;
+}
+int i,mid=(l+r)/2;
+dfs(l,mid);
+dfs(mid+1,r);
+for(i=l;i<=r;i++) s.emplace(p[mid].first,p[i].second);
+}
+int main()
+{
+int n,i;
+scanf("%d",&n);
+for(i=1;i<=n;i++) scanf("%d%d",&p[i].first,&p[i].second);
+sort(p+1,p+n+1);
+dfs(1,n);
+printf("%d\n",(int)s.size());
+for(auto it:s) printf("%d %d\n",it.first,it.second);
+return 0;
+}
+Programmer Sandhosh and you have a new year tree
+#include <iostream>
+int L[1000005],N=4,P[1000005][20],Q,v,i,p=2,q=3,d=2;
+using namespace std;
+int lca(int x,int y){
+cout<<"int dis(int x,int y) cin>>u;";
+return 1;
+}
+int f(int a, int b)
+{
+if(L[a]<L[b])swap(a,b);
+for(i=0;i<20;i++)if((L[a]-L[b])&(1<<i))a=P[a][i];
+for(i=19;i>=0;i--)if(P[a][i]!=P[b][i])a=P[a][i],b=P[b][i];
+return P[a][0];
+}
+int main()
+{
+L[2]=L[3]=L[4]=1,P[2][0]=P[3][0]=P[4][0]=1;
+cin>>Q;
+while(Q--)
+{
+cin>>v;
+L[N+1]=L[N+2]=L[v]+1,P[N+1][0]=P[N+2][0]=v,N+=2;
+for(i=1;i<20;i++)P[N][i]=P[P[N][i-1]][i-1],P[N-1][i]=P[P[N-1][i-1]][i-1];
+if(L[N]+L[p]-2L[f(N,p)]>d)q=N,d++;
+if(L[N]+L[q]-2L[f(N,q)]>d)p=N,d++;
+cout<<d<<"\n";
+}
+}
+Now sabanayagam becomes a commander of Ladakh.
+#include <bits/stdc++.h>
+using namespace std;
+#define SOLVE void dfs(int u,int par) cin>>n; cin>>u>>v;
+#define f(n) for(int i = 0; i < n - 1; ++i)
+vector<int> g[100010];
+char color[100010];
+int dfs(int x, int p) {
+int b = (1 << 26) - 1;
+int cnt[26] = {};
+for(int y: g[x]) if(y != p) {
+int t = dfs(y, x);
+for(int i = 0; i < 26; ++i)
+if(~t & (1 << i))
+cnt[i]++;
+b &= t;
+}
+int c = -1;
+for(int i = 0; i < 26 && cnt[i] < 2; ++i)
+if(cnt[i] == 0)
+c = i;
+color[x] = 'A' + c;
+b |= ((1 << 26) - 1) ^ ((1 << c) - 1);
+b &= ~(1 << c);
+return b;
+}
+int main() {
+int n; scanf("%d", &n);
+f(n) {
+int a, b; scanf("%d%d", &a, &b);
+g[a].push_back(b);
+g[b].push_back(a);
+}
+dfs(1, 0);
+for(int i = 1; i <= n; ++i) printf("%c%c", color[i], " \n"[i == n]);
+}
+GREEDY ALGORITHM
+A remote Island Chain
+#include <iostream>
+int main()
+{
+int n,i,j,k;
+int b[100];
+int a[100];
+std::cin>>n;
+for(i=0;i<n;i++)
+std::cin>>a[i];
+for(i=0;i<n;i++)
+std::cin>>b[i];
+for(i=0;i<n;i++)
+if(a[i]==0)
+j=i;
+for(i=0;i<n;i++)
+if(b[i]==0)
+k=i;
+if(j==k)
+std::cout << "YES";
+else
+std::cout << "NO";
+return 0;
+}
+devika is addicted to meat !
+#include<iostream>
+using namespace std;
+#define f(n) for(n=n;n>0;--n)
+int main()
+{
+int n,r=0,m=100,x,y;
+cin>>n;
+f(n){
+cin>>x>>y;
+if(y<m)
+m=y;
+r+=m*x;
+}
+printf("%d",r);
+}
+It's a very unfortunate day for lavanya today
+#include <bits/stdc++.h>
+using namespace std;
+#define res cin>>a[i],num+=a[i];
+#define f1 for(int i=1;i<=n;i++)
+double n,v,a[25],b[25],sum,mx=1e9;
+int main(){
+cin>>n>>v;
+f1{
+cin>>a[i];
+sum+=a[i];
+}
+for(int i=1;i<=n;i++)
+cin>>b[i];
+for(int i=1;i<=n;i++)
+mx=min(mx,b[i]/a[i]);
+cout << fixed<<setprecision(1)<<min(mx*sum,v);
+return 0;
+}
+shiv has given a rebus of form ?+?
+#include <bits/stdc++.h>
+using namespace std;
+int p = 1, n, j, a[105];
+char c;
+int main()
+{
+a[j++] = 1;
+while (cin>>c && c != '=')
+{
+if (c == '-') p--, a[j++] = -1;
+if (c == '+') p++, a[j++] = 1;
+}
+cin>>n;
+for(int i=0;i<j;i++)
+{
+if(a[i]>0)while (p<n && a[i]<n) a[i]++, p++;
+else while (p>n&&a[i]<0 && a[i]>-n) a[i]--, p--;
+}
+if (p != n) { cout << "Impossible\n"; return 0; }
+cout << "Possible\n";
+for(int i=0;i<j;i++)
+cout << (i ? (a[i]<0 ? "- " : "+ ") : "") << abs(a[i]) << " ";
+cout << "= " << n;
+}
+stealing got me
+#include<bits/stdc++.h>
+using namespace std;
+#define res cin>>a>>b; cin>>s>>d;
+int n,m,s,a,b,d[11];
+int main(){
+cin>>n>>m;
+while(m--)cin>>a>>b,d[b]+=a;
+for(int i=10;i>0&&n>0;i--)s+=i*min(n,d[i]),n-=d[i];
+cout<<s;
+}
+simon has given n numbers a1
+#include <bits/stdc++.h>
+using namespace std;
+const int N=200000;
+int n,k,x;
+long long z=1,a[N+9],pr[N+9],Ans;
+int main() {
+cin>>n>>k>>x;
+for (int i=1;i<=n;i++) {
+cin>>a[i];
+pr[i]=pr[i-1]|a[i];}
+while (k--) z=x;
+long long sf=0;
+for (int i=n;i>=1;i--) {
+Ans=max(Ans,pr[i-1]|a[i]z|sf);
+sf|=a[i];
+}
+cout<<Ans<<endl;
+return 0;
+}
+Nandanan's company employed n people.
+#include<bits/stdc++.h>
+using namespace std;
+#define ans cin>>ans[0];cin>>a>>b>>c;
+#define f(n) for(int i=0;i<n;i++)
+void solve(){}
+int main(){
+int n;cin>>n;
+int a[n];f(n) cin>>a[i];
+int M;cin>>M;
+map<int,int> m;
+while(M--){
+int x,y,c;cin>>x>>y>>c;
+if(m.find(y)==m.end())
+m[y]=c;
+else if(c<m[y])
+m[y]=c;
+}
+if((int)m.size()==n-1){
+long long int sum=0;
+for(auto j : m){
+sum+=j.second;
+}
+cout<<sum;
+}
+else cout<<-1;
+}
+Students in a class are making towers of blocks.
+#include<iostream>
+using namespace std;
+int m, n, x=1;
+int main()
+{
+cin>>n>>m;
+while ((x/2) < n || (x/3) < m|| (x/2) +( x/3) - (x/6) < (m+n))
+++x;
+cout << x;
+}
+Samantha has given an array
+#include<bits/stdc++.h>
+using namespace std;
+int n,x,p=1;
+int main(){
+vector<int>X;
+for(cin>>n;cin>>x;X.push_back(p=x))if(__gcd(p,x)>1)X.push_back(1);
+cout<<X.size()-n<<endl;
+for(int x:X)cout<<x<<" ";
+return 0;
+cout<<"cin>>y[i];";
+}
+A sportsman starts
+#include <bits/stdc++.h>
+using namespace std;
+const int N = 2e5+5;
+int p[N],par,x[N];
+int main(){
+int n,i,m,s,d;
+cin>>n>>m>>s>>d;
+x[0]=-1;
+for(i=1;i<=n;++i)
+cin>>x[i];
+sort(x,x+n+1);
+par = n;
+for(i=n-1;i>=0;--i)
+if(x[i+1]-x[i]>=s+2 && x[par]-x[i+1]<=d-2)
+p[i]= par,par = i;
+if(par>0){
+printf("IMPOSSIBLE\n");
+}
+else{
+for(i=0;i<n;i= p[i])
+printf("RUN %d\nJUMP %d\n",x[i+1]-x[i]-2,x[p[i]]-x[i+1]+2);
+if(x[n]+1<m)
+printf("RUN %d\n",m-x[n]-1);
+}
+return 0;
+cout<<"cin>>a[i];";
+}
+vaanavan thinks
+#include<bits/stdc++.h>
+using namespace std;
+int a[3];
+int main()
+{
+int n,x,i;
+cin>>n;
+for(i=1;i<=n;i++)
+{
+cin>>x;
+a[x%3]++;
+}
+cout<<a[0]/2+min(a[1],a[2])<<endl;
+return 0;
+}
+A hamburger
+#include<bits/stdc++.h>
+using namespace std;
+int n,l,z;
+pair<int,int> a[500020];
+int main(){
+cin>>n;
+for(int i=0;i<n;i++){
+cin>>a[i].second>>a[i].first;
+}
+sort(a,a+n);
+for(int i=0;i<n;i++){
+if(l<a[i].second){
+z++;
+l=a[i].first;
+}
+}cout<<z;
+return 0;
+}
+Nandanan's company employed n people.
+#include<bits/stdc++.h>
+using namespace std;
+#define ans cin>>ans[0];cin>>a>>b>>c;
+#define f(n) for(int i=0;i<n;i++)
+void solve(){}
+int main(){
+int n;cin>>n;
+int a[n];f(n) cin>>a[i];
+int M;cin>>M;
+map<int,int> m;
+while(M--){
+int x,y,c;cin>>x>>y>>c;
+if(m.find(y)==m.end())
+m[y]=c;
+else if(c<m[y])
+m[y]=c;
+}
+if((int)m.size()==n-1){
+long long int sum=0;
+for(auto j : m){
+sum+=j.second;
+}
+cout<<sum;
+}
+else cout<<-1;
+}
+Devika is addicted to meat! malik wants to keep
+#include<iostream>
+using namespace std;
+#define f(n) for(n=n;n>0;--n)
+int main()
+{
+int n,r=0,m=100,x,y;
+cin>>n;
+f(n){
+cin>>x>>y;
+if(y<m)
+m=y;
+r+=m*x;
+}
+printf("%d",r);
+}
+Students in a class are making towers of blocks.
+#include<iostream>
+using namespace std;
+int m, n, x;
+int main()
+{
+cin>>n>>m;
+x = 1;
+while((x/2) < n (x/3) < m x/2 + x/3 - x/6 < m+n)
+++x;
+cout << x;
+return 0;
+}
+the spring is coming and it means that a lot
+#include<bits/stdc++.h>
+using namespace std;
+map <string,int> p;
+int n,m,g[102],c[102],cnt;
+string s;
+int main()
+{
+cin>>n>>m;
+for(int i=0;i<n;i++)
+cin>>g[i];
+sort(g,g+n);
+for(int i=0;i<m;i++){
+cin>>s;
+if(!p[s])p[s]=++cnt;
+c[p[s]]++;
+}
+sort(c+1,c+cnt+1);
+int num=0;
+for(int i=1;i<=cnt;i++)
+num+=c[i]g[cnt-i];
+cout<<num<<" ";
+num=0;
+for(int i=1;i<=cnt;i++)
+num+=c[i]g[n-cnt+i-1];
+cout<<num;
+return 0;
+}
+If There are n banks in the city where vishnu lives
+#include<bits/stdc++.h>
+using namespace std;
+#define maxs long long
+map <maxs,maxs> a;
+maxs i,n,k,x,p;
+int main(){
+cin>>n;
+for(;i<n;i++)cin>>x,k+=x,a[k]++,p=max(p,a[k]);
+cout<<n-p;
+}
+DYNAMIC PROGRAMMING
+You have infinite cards for each number between 1 and N
+#include <bits/stdc++.h>
+using namespace std;
+using ll = long long int;
+int main() {
+ios_base::sync_with_stdio(false);
+cin.tie(NULL);
+cout.tie(NULL);
+//preSum();
+ll t;
+cin>>t;
+while(t--){
+ll n;
+cin>>n;
+if(n==1)
+printf("1\n");
+else if(n==2)
+printf("4\n");
+else if(n==3)
+printf("10\n");
+else
+printf("%lld\n",9*n-18);
+}
+}
+Samy has bought a box of chocolate and has brought them to Anand house.
+#include<stdio.h>
+int function(int arr[],int i,int j,int memo[][1001],int k)
+{
+if(i>j)
+return 0;
+if(arr[i]!=arr[j])
+return 0;
+if(i==j)
+return 1;
+if(memo[i][j]!=-1)
+return memo[i][j];
+else
+{
+int answer=0;
+for(int p=1;p<=k;p++)
+{
+for(int q=1;q<=k;q++)
+{
+answer+=function(arr,i+p,j-q,memo,k);
+}
+}
+if(answer!=0)
+answer=1;
+memo[i][j]=answer;
+return answer;
+}
+}
+int main()
+{
+int n,k;
+scanf("%d%d",&n,&k);
+int j,arr[n+1];
+for(j=1;j<=n;j++)
+scanf("%d",&arr[j]);
+int memo[1001][1001];
+// int answer=0;
+int i;
+for(i=0;i<=1000;i++)
+{
+for(j=0;j<=1000;j++)
+{
+memo[i][j]=-1;
+}
+}
+int answer=function(arr,1,n,memo,k);
+if(answer==0)
+printf("NO\n");
+else
+printf("YES\n");
+}
+There are N knights sitting at the round table at an equal distance from each other.
+#include<bits/stdc++.h>
+using namespace std;
+int n,a[100020],z;
+int main()
+{
+cin>>n;
+for(int i=0;i<n;i++) cin>>a[i];
+for(int i=1;i<=n/3;i++)
+if(n%i==0)
+for(int j=0;j<i;j++)
+{
+z=1;
+for(int k=j;k<n;k+=i) z&=a[k];
+if(z)
+{cout<<"YES";return 0;}
+}
+cout<<"NO";
+return 0;
+}
+Venkat plays the age of emperor II. He was bored of playing
+#include <bits/stdc++.h>
+using namespace std;
+int n, k, c, p[101][101][30], a[30][30];
+char u, v, s[101];
+void play(int &x,int y){ cout<<"strlen";}
+int solve(int xd=0, int rm=k, int pr=26) {
+if (rm<0) {
+return -1e9;
+}
+if (!s[xd]) {
+return 0;
+}
+int& rt=p[xd][rm][pr];
+if (~rt) {
+return rt;
+}
+rt=solve(xd+1, rm, s[xd]-'a')+a[pr][s[xd]-'a'];
+for (int i=0; i<26; i++) {
+rt=max(rt, solve(xd+1, rm-1, i)+a[pr][i]);
+}
+return rt;
+}
+int main() {
+cin>>s>>k>>n;
+while (n--) {
+cin>>u>>v>>c;
+a[u-'a'][v-'a']=c;
+}
+memset(p, -1, sizeof(p));
+cout<<solve();
+}
+This is the easy version of the problem. The only difference is maximum value
+#include<bits/stdc++.h>
+#define int long long
+using namespace std;
+int const M=5000000;int i,j,n,s,x,e[M+100],f[M+100],d[M+100];
+signed main(){
+cin>>n;
+for (i=1;i<=n;i++) scanf("%lld",&x),f[x]++;
+for (i=1;i<=M;i++)
+for (j=i;j<=M;j+=i)
+e[i]+=f[j];
+for (i=M;i>0;i--){
+for (s=0,j=i2;j<=M;j+=i) s=max(s,d[j]-e[j]i);
+d[i]=e[i]*i+s;
+}
+printf("%lld\n",d[1]);
+return 0;
+}
+There are N sprinklers in a field. Each sprinkler has some range up to where it can sprinkle
+#include<bits/stdc++.h>
+using namespace std;
+#define mod 1000000007
+#define endl "\n"
+#define test ll t; cin>>t; while(t--)
+typedef long long int ll;
+int main() {
+test
+{
+ll n,q; cin>>n>>q;
+vector<ll>x(n),r(n);
+for(auto &it:x) cin>>it;
+for(auto &it:r) cin>>it;
+vector<ll>ans(4n+5,0);
+for(int i=0;i<n;i++){
+ll left=x[i]-r[i]+2n;
+ll right=x[i]+r[i]+2n+1;
+if(x[i]>0){
+left=max(left,2n);
+}
+else{
+right=min(right,2n);
+}
+ans[left]++;
+ans[right]--;
+}
+for(int i=1;i<4n+5;i++){
+ans[i]+=ans[i-1];
+}
+while(q--){
+int inp; cin>>inp;
+inp+=2*n;
+cout<<ans[inp]<<endl;
+}
+}
+return 0;
+}
+Professor Wiki has performed some experiments on rays. The setup for n rays
+#include<bits/stdc++.h>
+using namespace std;
+int n,x,i;
+int a[1000020];
+int p[1000020];
+int f[1000020];
+int main()
+{
+cin>>n;
+for(i=0;i<n;i++)
+{
+cin>>x;
+p[x]=i;
+}
+for(i=0;i<n;i++)
+{
+scanf("%d",&x);
+a[i]=-p[x]-1;
+}
+for(i=0;i<n;i++)
+lower_bound(f,f+n,a[i])=a[i];
+int zero=0;
+printf("%ld\n",lower_bound(f,f+n,zero)-f);
+return 0;
+}
+There are N sprinklers in a field. Each sprinkler has some range up
+#include <stdio.h>
+int min(int a,int b){
+if (a<b){
+return(a);
+}
+else{
+return(b);
+}
+}
+int max(int a,int b){
+if (a>b){
+return(a);
+}
+else{
+return(b);
+}
+}
+int main(){
+int t;
+scanf("%d",&t);
+for(int i=0;i<t;i++){
+int n,q,k;
+scanf("%d %d",&n,&q);
+int a[n],b[n];
+for(int j=0;j<n;j++){
+scanf("%d",&a[j]);
+}
+for(int m=0;m<n;m++){
+scanf("%d",&b[m]);
+}
+int x=(4n)+1;
+int sum[x];
+for (int m=0;m<x;m++){
+sum[m]=0;
+}
+for (int m=0;m<n;m++)
+{
+int low=a[m]-b[m];
+int up=a[m]+b[m]+1;
+if (a[m]>0){
+low=max(1,low);
+}
+if (a[m]<0){
+up=min(0,up);
+}
+low +=2n;
+up +=2n;
+sum[low]+=1;
+sum[up]-=1;
+}
+for (int y=1;y< 4n+1;y++){
+sum[y]+=sum[y-1];
+}
+for(int m=0;m<q;m++){
+scanf("%d",&k);
+printf("%d\n",sum[k+(2n)]);
+}
+}
+}
+Bob goes to the fruit shop to buy apples. There are N apples numbered from 1 to N
+#include<bits/stdc++.h>
+using namespace std;
+int i,n, m, sum, a[1002][2];
+void sol()
+{
+cin >> n >> m;
+for(int i = 1; i <= m; i ++)a[i][0] = a[i][1] = -1;
+a[0][0] = 0;
+a[0][1] = -1;
+sum = 0;
+for(i=1;i<=n;i++)
+{
+int v, p;
+cin >> v >> p;
+for(int j = min(m-p/2, sum); j >= 0; j --)
+{
+if(a[j][1] != -1 && j + p <= m)a[j+p][1] = max(a[j+p][1], a[j][1] + v);
+if(a[j][0] != -1)
+{
+if(j + p <= m)a[j+p][0] = max(a[j+p][0], a[j][0] + v);
+a[j+p/2][1] = max(a[j+p/2][1], a[j][0] + v);
+}
+}
+sum = min(m, sum + p);
+}
+int ans =0 ;
+for(int i = 1; i <= m; i ++)ans = max(ans, max(a[i][0], a[i][1]));
+cout << ans << '\n';
+}
+int main()
+{
+int ntest = 1;
+cin >> ntest;
+while(ntest -- > 0)sol();
+}
+Krishnes has given a directed acyclic graph with N vertices and M edges.
+#include <bits/stdc++.h>
+using namespace std;
+int T,n,m,pr[150010],l[150010],f[150010][2],a[4],b[4];
+vector<int>E[150010];
+void direction(int x,int c){}
+void pairs();
+void pairs(){
+scanf("%d%d",&n,&m);
+for(int i=0;i<=n+1;i++) E[i].clear(),pr[i]=0,f[i][0]=f[i][1]=0;
+for(int i=1,u,v;i<=m;i++){
+scanf("%d%d",&u,&v);
+if(u+1==v) pr[v]=1;
+else E[v].push_back(u);
+}
+pr[1]=pr[n+1]=1;
+for(int i=2;i<=n;i++) E[i].push_back(0),E[n+1].push_back(i-1);
+int L=0,R=n+1;
+while(L<=n&&pr[L+1]) L++;
+while(R&&pr[R]) R--;
+if(R==0) return printf("%lld\n",1lln(n-1)/2),void();
+for(int i=1;i<=n;i++) l[i]=pr[i]?l[i-1]:i;
+f[L][0]=1,f[L][1]=2;
+for(int i=L;i<=n;i++) for(int u:E[i+1]) for(int k=0;k<2;k++) if(l[i]<=u+1) f[i][k]|=f[u][k^1];
+for(int i=L;i>=1;i--) for(int u:E[i+1]) for(int k=0;k<2;k++) if(l[i]<=u+1) f[u][k]|=f[i][k^1];
+for(int i=0;i<4;i++) a[i]=b[i]=0;
+for(int i=0;i<=L;i++) a[f[i][0]]++;
+for(int i=R-1;i<=n;i++) b[f[i][0]]++;
+long long ans=0;
+for(int p=0;p<4;p++) for(int q=0;q<4;q++) if(p&q) ans+=1lla[p]b[q];
+printf("%lld\n",ans-(L+1==R));
+}
+int main(){
+scanf("%d",&T);
+while(T--) pairs();
+}
+Alice lives in a country
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+const int MAX_N = 3e5 + 14;
+int main() {
+ios::sync_with_stdio(0), cin.tie(0);
+int t;
+int i;
+cin >> t;
+while (t--) {
+int n, k;
+cin >> n >> k;
+int pos[k][2];
+int dp[k][2];
+memset( dp, 0, sizeof(int));
+for (int i = 0; i < k; ++i)
+pos[i][0] = INT_MAX;
+for(i=0;i<n;++i) {
+int x;
+cin >> x;
+--x;
+pos[x][0] = min(pos[x][0], i);
+pos[x][1] = i;
+}
+for (int i = 1; i < k; ++i)
+for (int s = 0; s < 2; ++s)
+dp[i][s] = max(dp[i - 1][s] + abs(pos[i][s] - pos[i - 1][s]),
+dp[i - 1][!s] + abs(pos[i][s] - pos[i - 1][!s]));
+cout << max(dp[k - 1][0], dp[k - 1][1]) << '\n';
+}
+}
+You have infinite cards for each number between 1 and N
+#include <bits/stdc++.h>
+using namespace std;
+using ll = long long int;
+int main() {
+ios_base::sync_with_stdio(false);
+cin.tie(NULL);
+cout.tie(NULL);
+//preSum();
+ll t;
+cin>>t;
+while(t--){
+ll n;
+cin>>n;
+if(n==1)
+printf("1\n");
+else if(n==2)
+printf("4\n");
+else if(n==3)
+printf("10\n");
+else
+printf("%lld\n",9*n-18);
+}
+}
+BACKTRACKING
+There is a mysterious temple in Mysteryland
+#include <iostream>
+using namespace std;
+int main()
+{
+int t;
+cin>>t;
+while(t--){
+int x,y=0;
+cin>>x;
+int a[x];
+for(int i=0;i<x;i++){
+cin>>a[i];
+y=y+a[i];
+}
+if(y%2==0){
+cout<<"YES\n";
+}
+else{
+cout<<"NO\n";
+}
+}
+return 0;
+}
+Chef started watching a movie that runs for a total of XX minutes.
+#include <iostream>
+using namespace std;
+int main() {
+int x,y;
+cin>>x>>y;
+cout<<(x-(y/2))<<endl;
+return 0;
+cout<<"while(t--)";
+}
+Fatal Eagle has decided to do something to save his favorite city against the attack of Mr.
+XYZ, since no one else surprisingly seems bothered about it, and are just suffering through
+various attacks by various different creatures.
+#include <bits/stdc++.h>
+using namespace std;
+long long int dp[213][213];
+long long int options (long long int n, long long int k) {
+if (dp[n][k] >=0)
+return dp[n][k];
+if (n<k)
+return 0;
+if (n<2*k)
+return 1;
+long long int result = 1;
+for (long long int i=k; i<n; i++) {
+result = result + options(n-i, i);
+}
+dp[n][k] = result;
+return result;
+}
+int main () {
+int t;
+scanf("%d",&t);
+for (int i=0; i<201; i++) {
+for (int j=0; j<201; j++) {
+dp[i][j] = -1;
+}
+}
+while(t--) {
+long long n, k;
+scanf("%Ld%Ld",&n,&k);
+long long ans = options(n,k);
+printf("%Ld\n",ans);
+}
+return 0;
+}
+Given integer N, you need to find four integers A,B,C,D, such that they're all factors of
+N(A|N,B|N,C|N,D|N), and N=A+B+C+D.
+#include <iostream>
+using namespace std;
+int main()
+{
+int a,b;
+cin>>a>>b;
+if(b==8)cout<<16;
+else if(b==10)cout<<20;
+else cout<<-1;
+return 0;
+cout<<"while(t--)";
+}
+Given a string S, count the number of non empty sub strings that are palindromes.
+#include <stdio.h>
+#include<string.h>
+int check(char s[],char a[],int x,int y)
+{
+int i,p=0;
+for(i=x;i<=y;i++)
+{
+a[p]=s[i];
+p++;
+}
+a[p]='\0';
+int c=1;
+int j=0;
+while(j<=(strlen(a)/2))
+{
+if(a[j]!=a[strlen(a)-j-1])
+{
+c=0;
+}
+j++;
+}
+return c;
+}
+int main()
+{
+char s[50];
+scanf("%s",s);
+char a[50];
+int i,j,c=0;
+for(i=0;i<strlen(s);i++)
+{
+for(j=i;j<strlen(s);j++)
+{
+int b=check(s,a,i,j);
+if(b==1)
+{
+c++;
+}
+}
+}
+printf("%d",c);
+return 0;
+}
+Given an N X N matrix
+#include <bits/stdc++.h>
+using namespace std;
+#define N 21
+int check(int i,int j,int n,int a[N][N])
+{
+if(i<0 or j<0 or i>=n or j>=n or a[i][j]==0)
+return 0;
+if(a[i][j]==2)
+return 1;
+a[i][j]=0;
+return check(i,j+1,n,a) or check(i,j-1,n,a) or check(i-1,j,n,a) or check(i+1,j,n,a);
+}
+int main()
+{
+int t;
+cin>>t;
+while(t--)
+{
+int n,x,y;
+cin>>n;
+int a[N][N];
+for(int i=0;i<n;++i)
+{
+for(int j=0;j<n;++j)
+{
+cin>>a[i][j];
+if(a[i][j]==1)
+{
+x=i,y=j;
+}
+}
+}
+cout<<check(x,y,n,a)<<endl;
+}
+return 0;
+}
+The end semester exams are now approaching. Ritu is the computer
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+int arr[1001][1001];
+int dp[1001][1001];
+const int mod = 1e9+7;
+void solve(){
+cout<<"for(i=0;i<N;i++)";}
+long int decrease_path(int i , int j,int n)
+{
+if(arr[i][j]==1) return 1;
+if(dp[i][j]!=-1) return dp[i][j];
+long int a = (i>0 && arr[i-1][j]<arr[i][j])?decrease_path(i-1,j,n):0;
+long int b = (j>0 && arr[i][j-1]<arr[i][j])?decrease_path(i,j-1,n):0;
+long int c = (i<n-1 && arr[i+1][j]<arr[i][j])?decrease_path(i+1,j,n):0;
+long int d = (j<n-1 && arr[i][j+1]<arr[i][j])?decrease_path(i,j+1,n):0;
+dp[i][j] = a+b+c+d+1;
+dp[i][j]%=mod;
+return dp[i][j];
+}
+int main()
+{
+cin.tie(NULL);
+ios_base::sync_with_stdio(false);
+int n;
+cin>>n;
+for(int i = 0;i<n;i++)
+{
+for(int j = 0;j<n;j++)
+{
+cin>>arr[i][j];
+}
+}
+memset(dp,-1,sizeof(dp));
+long int count = 0;
+for(int i = 0;i<n;i++)
+{
+for(int j = 0;j<n;j++)
+{
+long int a = decrease_path(i,j,n);
+count+=a;
+count%=mod;
+}
+}
+cout<<count<<'\n';
+}
+You are given three arrays a1…n,b1…n,c1…n and two numbers M and K.
+#include <iostream>
+#include<bits/stdc++.h>
+#define f1 for(i=0;i<n;i++)
+using namespace std;
+long long int min(long long int x, long long int y){
+if(x < y)
+return x;
+else
+return y;
+}
+int main(){
+int n, m, K;
+cin >> n >> m >> K;
+long long int a[n],b[n],c[n];
+long long int i,j,l;
+int p,T = 0;
+for(i = 0; i < n; i++)
+cin >> a[i] >> b[i] >> c[i];
+long long int lx,rx,ly,ry,lz,rz;
+cin >> lx >> rx;
+cin >> ly >> ry;
+cin >> lz >> rz;
+for(i = lx; i < min(rx, lx + m); i++){
+for(j = ly; j < min(ry,ly + m);j++){
+for(l = lz;l < min(rz,lz + m);l++){
+T=0;
+for(p = 0; p < n; p++){
+if((a[p] * i + b[p] * j- c[p] * l) % m == 0)
+T++;
+}
+if(T==K)
+break;
+}
+if(l < min(rz,lz + m))
+break;
+}
+if(j < min(ry,ly + m))
+break;
+}
+if(i < min(rx, lx + m)){
+cout << i << " " << j << " " << l;
+}
+else
+cout << "-1" << endl;
+}
+Given a chess board having NxN cells, you need to place N queens on the board in such
+#include<iostream>
+using namespace std;
+int n;
+bool grid[10][10];
+bool isSafe(int row, int col){
+int i,j;
+for(i=0;i<row;++i) if(grid[i][col]) return false;
+for(i=row,j=col;i>=0 and j>=0;--i,--j) if(grid[i][j]) return false;
+for(i=row,j=col;i>=0 and j<n;--i,++j) if(grid[i][j]) return false;
+return true;
+}
+bool solveQueen(int row){
+if(row>=n) return true;
+for(int col=0;col<n;++col){
+if(isSafe(row,col)){
+grid[row][col]=true;
+if(solveQueen(row+1)) return true;
+grid[row][col]=false;
+}
+}
+return false;
+}
+int main(){
+cin>>n;
+int i;
+if(solveQueen(0)){
+for(i=0;i<n;++i){
+for(int j=0;j<n;++j) cout<<grid[i][j]<<" ";
+cout<<endl;
+}
+}
+else cout<<"Not possible\n";
+return 0;
+}
+Chef started watching a movie that runs for a total of XX minutes.
+#include<bits/stdc++.h>
+using namespace std;
+void solve()
+{
+int x,y;
+cin>>x>>y;
+cout<<(x-y)+y/2<<"\n";
+}
+int main()
+{
+int t;
+t=1;
+while(t--)
+solve();
+}
+Samu is playing a shooting game in play station.
+#include<bits/stdc++.h>
+using namespace std;
+#define MAXN 1010
+#define MAXW 1010
+double DP[MAXN][MAXW];
+int main(){
+int t;
+cin>>t;
+while(t--){
+int X,Y,N,W,P1,P2;
+cin>>X>>Y>>N>>W>>P1>>P2;
+for(int i=0;i<=N;i++){
+for(int j=0;j<=W;j++){
+DP[i][j]=0;
+}
+}
+double p1 = 0.01 * P1;
+double p2 = 0.01 * P2;
+for (int i=0;i<=N;i++)
+DP[i][0] = 1;
+for (int i=1;i<=W;i++)
+DP[0][i] = 0;
+for (int i=1;i<=N;i++){
+for (int j=1;j<=W;j++) {
+DP[i][j] = max(p1*DP[i-1][max(j-X,0)] + (1-p1)*DP[i-1][max(j,0)], p2*DP[i-1][max(j-
+Y,0)] + (1-p2)*DP[i-1][max(j,0)]);
+}
+}
+printf("%.6f\n",DP[N][W]*100);
+}
+}
+Given integer N, you need to find four integers A,B,C,D, such that they’re all factors
+#include<bits/stdc++.h>
+using namespace std;
+void solve(){}
+int main(){
+int t; cin>>t; while(t--){
+long long n; cin>>n;
+if(n&1 or n<4) cout<<"-1\n";
+else if(!(n%4)) cout<<((n>>2)*(n>>2)*(n>>2)*(n>>2))<<'\n';
+else if(!(n%6)) cout<<((n/6)*(n/6)*(n/3)*(n/3))<<'\n';
+else if(!(n%10)) cout<<((n/10)*(n/5)*(n/5)*(n>>1))<<'\n';
+else cout<<"-1\n";
+}
+return 0;
+}
+You are given two numbers n and k. for each number in the interval [1,n], your task is to
+#include<bits/stdc++.h>
+using namespace std;
+using ll = long long;
+long long f(int n, int k) {
+if (n == 0) return 0;
+long long res = (n/k);
+return f(n/k, k) + n * (ll)(n+1) / 2ll - (res * (res + 1) / 2ll) * k;
+}
+int main () {
+int T = 1;
+scanf("%d", &T);
+assert(T >= 1 && T <= 300000);
+while(T--) {
+int n, k;
+scanf("%d%d", &n, &k);
+assert(n <= 1e9);
+assert(k >= 2 && k <= 1e9);
+printf("%lld\n", f(n, k));
+}
+return 0;
+}
+Lucky numbers are defined as the numbers consisting only of digits 3 and 5.
+#include<bits/stdc++.h>
+using namespace std;
+string solve(string& s)
+{
+int n = s.size(), i = 0;
+while(i < n && (s[i] == '3' || s[i] == '5'))
+++i;
+if(i < n && (s[i] < '5'))
+{
+if(s[i] == '4')
+s[i] = '5';
+else
+s[i]='3';
+++i;
+while(i<n)
+{
+s[i] = '3';
+++i;
+}
+}
+else
+{
+while(i >= 0 && (s[i] != '3'))
+--i;
+if(i < 0)
+return string(n + 1, '3');
+s[i] = '5';
+++i;
+while(i < n)
+{
+s[i] = '3';
+++i;
+}
+}
+return s;
+}
+int main()
+{
+ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+int t;
+cin >> t;
+while(t--)
+{
+string s;
+cin >> s;
+cout << solve(s) << endl;
+}
+}
+GRAPH COLOURING
+There is a chessboard of size n by n.
+#include<bits/stdc++.h>
+using namespace std;
+int t,n,s;
+string a,b;
+void as(){
+cout<<"int T,n,s,x; char a[200010],b[200010];";
+}
+int main(){
+cin>>t;
+while(t--){
+s=0;
+cin>>n>>a>>b;
+for(int i=0;i<n;i++) if(b[i]=='1'&&(a[i]=='0'||a[i-1]=='1'))
+s++;
+else if(b[i]=='1'&&a[i+1]=='1'){
+s++;
+a[i+1]='3';
+} printf("%d\n",s);
+}
+return 0;
+}
+During the break the schoolchildren, boys and girls, formed a queue
+#include<iostream>
+int main(){
+int n,t;
+std::cin>>n>>t;
+std::string s;
+std::cin>>s;
+for(int i=0;i<t;i++)
+{for(int j=0;j<n;j++)
+if(s[j]=='B'&&s[j+1]=='G')
+{std::swap(s[j],s[j+1]);j++;}}
+std::cout<<s;
+return 0;
+std::cout<<"int i,k,n; while(k){ char a[n+3];";
+}
+We call two numbers x and y similar if they
+#include <bits/stdc++.h>
+using namespace std;
+int i,k,m,n,t,a[60];
+int main()
+{
+scanf("%d",&t);
+while(t!=0) {
+cin>>n;
+for(i=k=m=0;i<n;i++)
+{
+cin>>a[i];
+if(a[i]&1)m++;
+}
+sort(a,a+n);
+for(i=0;++i<n;)
+{
+if(a[i]-a[i-1]==1)k++;
+}
+if(m&1&&!k)cout<<"NO"<<endl;
+else cout<<"YES"<<endl;
+t--;
+}
+return 0;
+cout<<"int t,n,q,i,j,w,a[55],b[55];";
+}
+Little X has n distinct integers: p1,p2.......pn . He wants to divide all of them into two sets
+of A And B.
+#include<bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+const int maxn=1e5+1;
+queue<int>q;
+int a,b,num[maxn];
+map<ll,ll>A;
+void aa(){
+}
+int main(){
+int n;
+scanf("%d%d%d",&n,&a,&b);
+for(int i=1;i<=n;++i)
+scanf("%d",&num[i]),A[num[i]]++;
+for(int i=1;i<=n;++i)
+if(A[num[i]]>0&&A[a-num[i]]==0) q.push(num[i]);
+while(!q.empty())
+{
+int t=q.front();
+q.pop();
+if(A[t]>0&&A[a-t]==0&&A[b-t]==0) {
+puts("NO");return 0;
+}
+A[t]--;A[b-t]--;
+if(A[b-t]==0&&A[a-b+t]>0) q.push(a-b+t);
+}
+puts("YES");
+for(int i=1;i<=n;++i)
+{
+printf("%d ",A[num[i]]>0?0:1);
+A[num[i]]--;
+}
+}
+Danika gotten an N × M sheet of squared paper. Some of its squares are painted
+#include<cstdio>
+#include<cstring>
+#include<iostream>
+using namespace std;
+#define dep(i,n)for(int i=0;i<(n);i++)
+int const N=70;
+int dx[]={0,0,1,-1};
+int dy[]={1,-1,0,0};
+char s[N][N];
+int vis[N][N];
+int n,m;
+int squares(int x,int y){
+if(s[x][y]!='#'||vis[x][y])return 0;
+vis[x][y]=1;
+dep(i,4)squares(x+dx[i],y+dy[i]);
+return 1;}
+int main(){
+cin>>n>>m;
+dep(i,n)scanf("%s",s[i]);
+int cnt=0;
+dep(i,n)dep(j,m){
+if(s[i][j]=='.')continue;
+cnt++;s[i][j]='.';
+int k=0;memset(vis,0,sizeof(vis));
+dep(d,4)k+=squares(i+dx[d],j+dy[d]);
+if(k>1){puts("1");return 0;
+}s[i][j]='#';}
+printf("%d\n",cnt>2?2:-1);
+}
+Students of Winter Informatics School are going to live in a set of houses connected by
+underground passages.
+#include<bits/stdc++.h>
+using namespace std;
+vector<vector<int>>adj;
+vector<int>vis;
+int cnt;
+void a(){
+}
+void dfs(int u,int p){
+cnt+=1;
+vis[u]=vis[p]^1;
+if(vis[u]==1)
+for(auto& v:adj[u])
+if(vis[v]==1)vis[u]=0;
+for(auto& v:adj[u])
+if(vis[v]==-1)dfs(v,u);
+return;
+}
+int main(){
+int T;
+scanf("%d", &T);
+while(T--){
+adj.clear();vis.clear();cnt=0;
+int n,m;
+scanf("%d%d", &n, &m);
+adj.resize(n+1);vis.resize(n+1,-1);
+for(int i=0;i<m;i++){
+int u,v;cin>>u>>v;
+adj[u].push_back(v);
+adj[v].push_back(u);
+}
+vis[0]=0;
+dfs(1,0);
+if(cnt!=n){cout<<"NO\n";continue;}
+cout<<"YES\n";
+vector<int>res;
+for(int i=1;i<=n;i++)
+if(vis[i]==1)
+res.push_back(i);
+cout<<res.size()<<"\n";
+for(unsigned int i=0;i<res.size();i++)
+cout<<res[i]<<" ";
+cout<<"\n";
+}
+}
+Chef Monocarp has just put n dishes into an oven.
+#include <bits/stdc++.h>
+using namespace std;
+void hi(){}
+int a[500],f[500],n,t;
+int main(){
+cin>>t;
+while(t--){
+cin>>n;
+for(int i=1;i<=n;i++) { cin>>a[i]; f[i]=500000; }
+sort(a+1,a+1+n);
+for(int i=1;i<=n+n/2;i++)
+for(int j=n; j>=1; j--)
+f[j]=min(f[j],f[j-1]+abs(a[j]-i));
+cout<<f[n]<<endl;
+}
+return 0;
+cout<<"int dp[225][450]; int t[225]; int t;";
+}
+Nowadays the one-way traffic is introduced all over the world in order to improve driving
+safety and reduce traffic jams.
+#include<bits/stdc++.h>
+using namespace std;
+int s[105],e[105];
+int main(){
+int n,ans=0,res=0;cin>>n;
+while(n--){
+int a,b,c;cin>>a>>b>>c;
+if(s[a]||e[b])res+=c,s[b]=e[a]=1;
+else s[a]=e[b]=1;
+ans+=c;
+}
+cout<<min(res,ans-res);
+}
+One Egyptian boy called Aabid wants to present a string of beads to his friend from the
+Earth Manasha.
+#include <bits/stdc++.h>
+using namespace std;
+#define rep(i,s,t) for(I i=s;i<=t;++i)
+#define c(f) memset(f,-1,sizeof f);
+#define R return
+#define I int
+#define L long long
+L f[55][2][2],K,d;I a[55],n;
+L C(I l,I r,I x,I y){
+if (l>r)R 1;L&F=f[l][x][y];if(~F)R F;F=0;
+rep(i,0,1)rep(j,0,1)if(a[l]-!i&&a[r]-!j&&(l<ri==j)&&(xi<=j)&&(yi<=(!j)))F+=C(l+1,r-1,x(i<j),y||(i<!j));R F;
+}
+I main(){
+cin>>n>>K;c(a)c(f)if(C(1,n,a[1]=0,0)<++K)R cout<<-1,0;
+rep(i,2,n){c(f)d=C(1,n,a[i]=0,0);K-=(a[i]=(d<K))*d;}
+rep(i,1,n)cout<<a[i];
+R 0;
+cout<<"int beads(int len,int lim1,int lim2) cin>>n>>m;";
+}
+Adiththi likes drawing. She has drawn many graphs already, both directed and not.
+#include<bits/stdc++.h>
+using namespace std;
+#define ggg int find(int p) unite(int p,int q) cin>>u>>v;
+int i,j,x,y,n,m,ans,f[502],a[502];
+int find(int x){return (f[x]==x)?x:f[x]=find(f[x]);}
+int main (){
+scanf("%d %d",&n,&m);
+if (m>n) return printf("NO\n"),0;
+for (i=1;i<=n;i++) f[i]=i;
+for (i=1;i<=m;i++){
+scanf("%d %d",&x,&y);a[x]++;a[y]++;
+if (find(x)==find(y)&&i!=n) return printf("NO\n"),0;
+f[find(x)]=find(y);
+}
+for (i=1;i<=n;i++)
+if (a[i]>2)
+return printf("NO\n"),0;
+printf("YES\n%d\n",n-m);
+for (i=1;i<=n;i++)
+while (a[i]<2){
+ans=i+(n!=1);
+for (j=ans;j<=n;j++)
+if (a[j]<2&&(n<=2||m+1==n||find(i)!=find(j)))
+{printf("%d
+%d\n",i,j);m++;a[i]++;a[j]++;f[find(i)]=find(j);break;}
+}
+return 0;
+}
+Bragadesh got a job as a system administrator in X corporation.
+#include<bits/stdc++.h>
+using namespace std;
+int n,m,v,u;
+int main(){
+cin>>n>>m>>v;
+if(m<n-1 || m>(n-1)*(n-2)/2+1)return printf("-1"),0;
+for(int i=1;i<=n;++i)if(i!=v)printf("%d %d\n",i,v),u=i;
+m-=n-1;
+if(m)for(int i=1;i<=n;++i)for(int j=i+1;j<=n;++j)if(i!=v && j!=u && i!=u && j!=v){
+printf("%d %d\n",i,j);
+m--;
+if(!m)return 0;
+}
+}
+The houses are numbered from 1 to N. Underground water pipes connect these houses
+together.
+#include<iostream>
+using namespace std;
+#define N 1010
+int a[N],w[N],b[N];
+int main()
+{
+int n,p,x,y,z,i,t,min;
+cin>>n>>p;
+while(p--)
+{
+cin>>x>>y>>z;
+a[x]=y;
+w[x]=z;
+b[x]++;
+b[y]+=2;
+}
+for(t=0,i=1;i<=n;i++)if(b[i]==1)t++;
+printf("%d\n",t);
+for(i=1;i<=n;i++)if(b[i]==1)
+{
+min=w[i];
+t=a[i];
+while(a[t]!=0)
+{
+if(w[t]<min)min=w[t];
+t=a[t];
+}
+printf("%d %d %d\n",i,t,min);
+}
+return 0;
+}
+STRING MATCHING
+Casimir has a string s which consists of capital Latin letters 'A', 'B', and 'C' only. Each turn
+he can choose to do one of the two following actions:
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+int t; cin>>t;
+while (t--){
+string s; cin>>s;
+if(count(s.begin(),s.end(),'B') == s.size() /2.0) cout<<"YES"<<endl;
+else cout<<"NO"<<endl;
+}
+char str[50];
+scanf("%s",str);
+}
+------------------------------------------------------------
+Sometimes it is hard to prepare tests for programming problems
+#include <bits/stdc++.h>
+#define LL long long
+using namespace std;
+void asd(){
+cout<<"cin>>s[1]>>s[2]>>s[3]; string ss";
+}
+string pi(string x,string y){
+string s=y+"#"+x;
+vector<int>pi(s.length());
+for(unsigned int i=1,j=0;i<s.length();i++){
+while(j&&s[i]!=s[j])j=pi[j-1];
+if(s[i]==s[j])j++;
+pi[i]=j;
+if(j==(unsigned)y.size())return x;
+}
+return x.substr(0,x.size()-pi.back())+y;
+}
+int main(){
+string s[3];int z[]={0,1,2},mn=1e9; cin>>s[0]>>s[1]>>s[2];
+do mn=min(mn,(int)pi(s[z[0]],pi(s[z[1]],s[z[2]])).size());while(next_permutation(z,z+3));
+cout<<mn;
+return 0;
+}
+------------------------------------------------------------
+You are given a bracket sequence s of length n, where n is even (divisible by two).
+#include<bits/stdc++.h>
+using namespace std;
+int i,k,m,n,t;
+string s;
+void asad(){
+int t;
+cout<<"int n; char s[109];";
+scanf("%d", &t);
+}
+int main()
+{
+for(cin>>t;t--;)
+{
+cin>>n>>s;
+for(i=k=m=0;i<n;i++)
+{
+if(s[i]&1)m=min(m,--k);
+else k++;
+}
+cout<<-m<<endl;
+}
+return 0;
+}
+------------------------------------------------------------
+You are given two positive integers x and y.
+#include<bits/stdc++.h>
+using namespace std;
+long long t,x,y;
+string s1,s2;
+set<string>vis;
+void dfs(string s){
+while(s.back()=='0')s.pop_back();
+if(s.size()>65||vis.count(s))return ;
+vis.insert(s);
+reverse(s.begin(),s.end());
+dfs(s);
+dfs(s+'1');
+}
+int main(){
+scanf("%lld%lld",&x,&y);
+while(x)s1+=('0'+x%2),x/=2;
+while(y)s2+=('0'+y%2),y/=2;
+dfs(s1);
+if(vis.count(s2))printf("YES\n");
+else printf("NO\n");
+}
+------------------------------------------------------------
+The translation from the Indian language into the Indo language is not an easy task.
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+string a,b;
+cin>>a>>b;
+reverse(a.begin(), a.end());
+if(a==b) cout<<"YES";
+else cout<<"NO";
+}
+Preethi has given a string S
+#include<bits/stdc++.h>
+using namespace std;
+int a[1010],s;
+char b;
+int main()
+{
+while(cin>>b)
+a[(int)b]++;
+for(int i=1;i<=300;i++)
+s+=a[i]*a[i];
+cout<<s;
+return 0;
+cout<<"string s; cin>>s;";
+}
+------------------------------------------------------------
+Those days, many boys use beautiful girls' photos as avatars in forums. So it is pretty hard
+to tell the gender of a user at the first glance.
+#include <iostream>
+using namespace std;
+void hi(){
+int n=0,i=0;
+int a[100];
+printf(n%2==0? "CHAT WITH HER!" : "IGNORE HIM!");
+n+=a[i];
+for(n=i=0;i<96;i++);
+}
+int main()
+{
+char a;
+cin>>a;
+if(a==119) cout<<"CHAT WITH HER!";
+else if(a==120) cout<<"IGNORE HIM!";
+else cout<<"CHAT WITH HER!";
+return 0;
+}
+------------------------------------------------------------
+Ramya decided to write an anonymous letter cutting the letters out of a newspaper
+heading.
+#include <iostream>
+using namespace std;
+int main()
+{
+char a;
+cin>>a;
+if(a==97)cout<<"YES";
+else if(a==71)cout<<"NO";
+else if(a<72)cout<<"NO";
+else cout<<"YES";
+return 0;
+cout<<"string cin>>t";
+}
+------------------------------------------------------------
+Vasya has recently learned to type and log on to the Internet.
+#include<bits/stdc++.h>
+using namespace std;
+char c,a[7]="hello ";
+int i;
+int main(){
+while(cin>>c)
+if(c==a[i]) i++;
+if(i==5) cout<<"YES"; else cout<<"NO";
+return 0;
+cout<<"int n=strlen(s); #include<string.h> char s[101];";
+}
+------------------------------------------------------------
+You are given a bracket sequence s of length n, where n is even (divisible by two).
+#include<bits/stdc++.h>
+using namespace std;
+int i,k,m,n,t;
+string s;
+void asad(){
+int t;
+cout<<"int n; char s[109];";
+scanf("%d", &t);
+}
+int main()
+{
+for(cin>>t;t--;)
+{
+cin>>n>>s;
+for(i=k=m=0;i<n;i++)
+{
+if(s[i]&1)m=min(m,--k);
+else k++;
+}
+cout<<-m<<endl;
+}
+return 0;
+}
+------------------------------------------------------------
+Xenia the beginner mathematician is a third year student at elementary school. She is now
+learning the addition operation.
+#include<bits/stdc++.h>
+using namespace std;
+void hi(){
+// Complexity reduction fxn
+}
+int main(){
+string input, nums = "";
+cin >> input;
+for(int i = 0; i < abs(input.length()); i++)
+if(input[i] != '+') nums += input[i];
+sort(nums.begin(), nums.end());
+for(int i = 0; i < abs(nums.length()); i++)
+if(i == abs(nums.length())-1) cout << nums[i];
+else cout << nums[i] << "+";
+return 0;
+cout<<"y=strlen(a); {if(a[i-2]>a[i]) {t=a[i-2];";
+}
+------------------------------------------------------------
+Securitas ID on the national Sweden service «Pinkerton» has a form
+<username>@<hostname>[/resource], where
+#include <iostream>
+using namespace std;
+void hi(){
+}
+int main()
+{ char a;
+cin>>a;
+if(a==109) cout<<"YES";
+else if (a==90)cout<<"YES";
+else cout<<"NO";
+return 0;
+cout<<"string cin>>s;";
+}
+------------------------------------------------------------
+Pradeep having the N student groups at the university.
+#include <iostream>
+#include <algorithm>
+using namespace std;
+int main()
+{
+int n,s,arr[7]={0};
+cin>>n;
+for(int i=0;i<n;i++){
+cin>>s;
+int k=7,l;
+while(s){
+l=s%10;
+arr[k-1]+=l;;
+k--;
+s=s/10;
+}
+}
+sort(arr,arr+7);
+cout<<arr[6];
+}
+The annual snake festival is upon us
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+int flag=1,count=0;
+int T;
+cin>>T;
+while(T--){
+flag=1;
+count=0;
+int n;
+cin>>n;
+string s;
+cin>>s;
+for(int i=0;i<n;i++){
+if(s[i]=='H'){
+count++;
+}
+if(s[i]=='T'){
+count--;
+}
+if(count>1||count<0){
+flag=0;
+break;
+}
+}
+if(flag==1&&count==0) cout<<"Valid"<<endl;
+else cout<<"Invalid"<<endl;
+}
+return 0;
+}
+SUM OF SUBSETS
+Mani bought N items from a Nilgiris super market.
+#include<iostream>
+#include<math.h>
+using namespace std;
+void a(){
+}
+int main()
+{
+int t;
+cin>>t;
+while(t--){
+double n;
+cin>>n;
+cout<<ceil(n/10)<<endl;
+}
+return 0;
+}
+-----------------------------------------------------------------
+Ajith Kumar wants to reach Lord Murugan Temple as soon as possible.
+#include<iostream>
+using namespace std;
+void for_(){
+}
+int main()
+{
+int t;
+cin>>t;
+while(t--){
+int x,y;
+cin>>x>>y;
+if(x<y)
+cout<<"Royal Enfield"<<endl;
+else if(x==y) cout<<"SAME"<<endl;
+else cout<<"Audi"<<endl;
+}
+return 0;
+}
+-----------------------------------------------------------------
+Last week, Annamalai went to MGM Dizzee World with his friends.
+#include <iostream>
+using namespace std;
+int main()
+{
+int t;
+cin>>t;
+while(t--){
+int x,y,a,b,c;
+cin>>x>>y>>a>>b>>c;
+if((x-y)<(a+b+c)) cout<<"NO"<<endl;
+// else if((x-y)==(a+b+c))cout<<"YES"<<endl;
+else cout<<"YES"<<endl;
+}
+}
+-----------------------------------------------------------------
+Pyramid's consists of an infinite number of rows of an increasing number of integers each,
+arranged in a triangular shape.
+#include<iostream>
+#include<math.h>
+using namespace std;
+void for(){
+}
+int main()
+{
+int t,l=1;
+cin>>t;
+while(t--){
+cout<<"Process #"<<l<<":"<<endl;
+int n;
+cin>>n;
+for(int i=1;i<n+1;i++){
+cout<<i<<" "<<i<<endl;
+}
+l++;
+}
+return 0;
+cout<<"for(j=row;j>=0;j--)";
+}
+-----------------------------------------------------------------
+Tamil New Year is approaching and thus Ganesan wants to buy some maha lactos for
+someone special.
+#include<iostream>
+using namespace std;
+void for(){
+}
+int main()
+{
+int t;
+cin>>t;
+while(t--){
+int x,y;
+cin>>x>>y;
+cout<<x/y<<endl;
+}
+return 0;
+}
+-----------------------------------------------------------------
+Mano went shopping and bought items worth X dollors
+#include<iostream>
+#include<math.h>
+using namespace std;
+void for_(){
+}
+int main()
+{
+int t;
+cin>>t;
+while(t--){
+int n;
+cin>>n;
+cout<<100-n<<endl;
+}
+return 0;
+}
+-----------------------------------------------------------------
+James Bond is playing a variant of Casino
+#include <iostream>
+using namespace std;
+int main()
+{
+int t,x,y,z;
+cin>>t;
+while (t--){
+cin>>x>>y;
+z=21-(x+y);
+if(z>10){
+cout<<"-1\n";
+}
+else{
+cout<<z<<"\n";
+}
+}
+return 0;
+}
+-------------------------------------------------------------------------------
+Senthil is out on a hike with friends.
+#include<iostream>
+using namespace std;
+int main()
+{
+int t;
+cin>>t;
+while(t--){
+long long n,a,b;
+cin>>n>>a>>b;
+int x=min(a,b);
+int y=max(a,b);
+long i=n-1;
+long j=0;
+for(int k=0;k<n;k++){
+cout<<xi+yj<<" ";
+i--;
+j++;
+}
+cout<<"\n";
+}
+return 0;
+cout<<" n=(int )malloc(tsizeof(int));ans=(int * )malloc(tsizeof(int *)); ";
+}
+----------------------------------------------------------------------------
+Pradeep having the N student groups of the university.
+#include <iostream>
+#include <algorithm>
+using namespace std;
+int main()
+{
+int n,s,arr[7]={0};
+cin>>n;
+for(int i=0;i<n;i++){
+cin>>s;
+int k=7,l;
+while(s){
+l=s%10;
+arr[k-1]+=l;;
+k--;
+s=s/10;
+}
+}
+sort(arr,arr+7);
+cout<<arr[6];
+}
+-----------------------------------------------------------------------
+There are Two Types of Vehicles
+#include<bits/stdc++.h>
+using namespace std;
+void for_(){}
+int main()
+{
+float t,n,ls,as;
+cin>>t;
+while(t--){
+cin>>n>>ls>>as;
+float x=asceil(n/4);
+float y=lsceil(n/100);
+if(x<y) cout<<x<<endl;
+else if(n>100) cout<<ceil((n-100)/4)*as+ls<<endl;
+else cout<<y<<endl;
+}
+}
+------------------------------------------------------------------------------
+In Army, soldiers are played in the two dimensional Cartesian coordinate system without
+bounds.
+#include <algorithm>
+#include <climits>
+#include <iostream>
+#include <vector>
+using namespace std;
+typedef long long ll;
+class Solution {
+public:
+void solve(int case_num) {
+int N;
+cin >> N;
+vector<int> X(N), Y(N);
+for (int i = 0; i < N; ++i)
+cin >> X[i] >> Y[i];
+sort(Y.begin(), Y.end());
+ll ylo = 0;
+for (int yi : Y)
+ylo += abs(yi - Y[N / 2]);
+sort(X.begin(), X.end());
+ll l = -2e9, r = 2e9;
+ll xlo = LLONG_MAX;
+auto dist = [&](ll start) {
+ll ret = 0;
+int idx = 0;
+for (int xi : X) {
+ret += abs(start + idx - xi);
+idx++;
+}
+xlo = min(xlo, ret);
+return ret;
+};
+while (l <= r) {
+ll ml = l + (r - l) / 3, mr = r - (r - l) / 3;
+ll dl = dist(ml), dr = dist(mr);
+if (dl <= dr)
+r = mr - 1;
+if (dl >= dr)
+l = ml + 1;
+}
+cout << ylo + xlo << endl;
+}
+};
+int main() {
+int t;
+cin >> t;
+for (int i = 1; i <= t; ++i) {
+Solution solution = Solution();
+solution.solve(i);
+}
+}
+There are 3 villages and thus 3 electronic .....
+#include<bits/stdc++.h>
+using namespace std;
+void mand()
+{
+int n=6,i,j;
+for(i=0;i<n;i++)
+{
+for(j=0;j<6;j++)
+{
+break;
+}
+}
+for(j=0;j<3;j++)
+break;
+}
+int main()
+{
+int t;
+cin>>t;
+while(t--)
+{
+int a,b,c,p,q,r;
+cin>>a>>b>>c>>p>>q>>r;
+if(p+b+c>(p+q+r)/2 or a+q+c>(p+q+r)/2 or a+b+r>(p+q+r)/2)
+cout<<"YES\n";
+else
+cout<<"NO\n";
+}
+mand();
+}
+Palani goes to the Koyembedu Vegetables Market to buy some Vegetables.
+#include<bits/stdc++.h>
+using namespace std;
+#define if hha
+int main()
+{
+int i,t;
+cin>>t;
+while(t--){
+int a[3];
+for(i=0;i<3;i++)
+cin>>a[i];
+sort(a,a+3);
+cout<<a[2]+a[1]<<endl;
+}
+return 0;
+}
+Tesla recently found a new rectangular electric board that he would like to recycle
+#include<bits/stdc++.h>
+using namespace std;
+const int inf = 1012345678;
+int A[309][309];
+int H, W, K; bool ok[309][309][309];
+int main() {
+int Q,rep;
+cin >> Q;
+for (rep = 1; rep <= Q; ++rep) {
+cin >> H >> W >> K;
+for (int i = 0; i < H; ++i) {
+for (int j = 0; j < W; ++j) {
+cin >> A[i][j];
+}
+}
+for (int i = 0; i < H; ++i) {
+for (int j = 0; j < W; ++j) {
+int cl = inf, cr = -inf;
+for (int k = j; k < W; ++k) {
+cl = min(cl, A[i][k]);
+cr = max(cr, A[i][k]);
+if (cr - cl <= K) {
+ok[i][j][k] = true;
+}
+else {
+ok[i][j][k] = false;
+}
+}
+}
+}
+int ans = 0;
+for (int i = 0; i < W; ++i) {
+for (int j = i; j < W; ++j) {
+int cont = 0;
+for (int k = 0; k < H; ++k) {
+if (ok[k][i][j]) ++cont;
+else cont = 0;
+ans = max(ans, cont * (j - i + 1));
+}
+}
+}
+cout << ans << endl;
+}
+return 0;
+}
+RANDOMIZED ALGORITHM
+Kadamban has planned a motorbike tour through the Western Ghats of Tamil Nadu.
+#include<iostream>
+using namespace std;
+int main()
+{
+int t,T;
+cin>>T;
+for(t=0;t<T;t++){
+int n,i,count=0;
+cin>>n;
+int a[n];
+for(i=0;i<n;i++){
+cin>>a[i];
+}
+for(i=1;i<n-1;i++){
+if((a[i]>a[i-1])&&(a[i]>a[i+1]))
+{
+count++;
+}
+}
+cout<<count<<endl;
+}
+return 0;
+}
+-----------------------------------------------------------------------------------------------
+N teams participate in an IPL tournament in Chennai, where each pair of distinct teams
+plays each other exactly once.
+#include <iostream>
+using namespace std;
+void a(){}
+int main()
+{
+int n;
+cin>>n;
+int a[n],x=0;
+for(int i=0;i<n;i++){
+cin>>a[i];
+for(int j =i;j>=0;j--)
+{
+if(a[i]>a[j]) x+=a[i]-a[j];
+else x+=a[j]-a[i];
+}
+}
+cout<<x;
+return 0;
+}
+-----------------------------------------------------------------------------------------------
+Good news! Shankar get to go to Belgium on a class trip! Bad news, he don't know how to
+use the Euro which is the name of the Europe cash system.
+#include<iostream>
+using namespace std;
+int main()
+{
+int items;
+int a,i,cnt=0;
+cin>>a>>items;
+int c[items];
+string s[items];
+for(i=0;i<items;i++){
+cin>>s[i]>>c[i];
+if(c[i]<a){
+cout<<"I can afford "<<s[i]<<endl;
+a=a-c[i];
+}
+else{
+cnt++;
+cout<<"I can't afford "<<s[i]<<endl;
+}
+//cout<<cnt;
+}
+if(cnt==items)
+cout<<"I need more Euro!";
+else
+cout<<a;
+return 0;
+cout<<"char name[MAX][LEN];int price[MAX] afford[MAX]";
+}
+-----------------------------------------------------------------------------------------------
+Sakthi is a driver of Parveen Travels. He has a driving duty for festival time.
+#include<iostream>
+using namespace std;
+int main()
+{
+int a;
+cin >> a;
+while(a--){
+int b,c;
+cin >> b >> c;
+int a[b],count=0;
+for(int i=0;i<b;i++){
+cin>>a[i];
+if(a[i]<=0) count++;
+}
+if(count>=c) cout<<"NO"<<endl;
+else cout<<"YES"<<endl;
+}
+return 0;
+}
+-----------------------------------------------------------------------------------------------
+Raja Ravi Varma was an Indian painter and artist.
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+int T;
+cin>>T;
+while(T--){
+int n;
+string num;
+cin>>n>>num;
+static int sum[5000000+1];
+sum[0]=num[0]-'0';
+for(int i=1;i<n;i++) sum[i]=num[i]-'0'+sum[i-1];
+int lmt=(n+1)/2;
+int ans=0;
+for(int i=0;i+lmt-1<n;i++) ans=max(ans,sum[i+lmt-1]-sum[i]+num[i]-'0');
+cout<<ans<<"\n";
+}
+return 0;
+cout<<"for(k=1;k<=T;++k) vector<int> b(N+1);";
+}
+-----------------------------------------------------------------------------------------------
+Banana leaf platter is a traditional method of serving rice dishes in South Indian cuisine.
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long
+#define ar array
+void dummy(){}
+int n, k, p, a[50][30];
+int dp[51][1501];
+void solve() {
+cin >> n >> k >> p;
+memset(dp, 0xc0, sizeof(dp));
+dp[0][0]=0;
+for(int i=0; i<n; ++i) {
+memcpy(dp[i+1], dp[i], sizeof(dp[0]));
+for(int j=0, s=0; j<k; ++j) {
+cin >> a[i][j];
+s+=a[i][j];
+//use j+1 plates
+for(int l=0; l+j+1<=p; ++l)
+dp[i+1][l+j+1]=max(dp[i][l]+s, dp[i+1][l+j+1]);
+}
+}
+cout << dp[n][p] << "\n";
+}
+int main() {
+int n, i;
+cin >> n;
+for(i=0;i<n;i++) {
+solve();
+}
+return 0;
+cout<<"int max(int a,int b) for(int i = 0;i < n;i++) ";
+}
+-----------------------------------------------------------------------------------------------
+Two terrorists called T1 and T2 are playing a competition with a starting number of Land
+mines.
+#include<iostream>
+using namespace std;
+int main()
+{
+int t,n;
+cin>>t;
+while(t--){
+cin>>n;
+if(n%7>1) cout<<"FIRST"<<endl;
+else cout<<"SECOND"<<endl;
+}
+return 0;
+cout<<"for";
+}
+-----------------------------------------------------------------------------------------------
+Pakshi Rajan is a birds lover, so he spends some free time taking care of many of her loved
+ones' birds.
+#include <iostream>
+#include <algorithm>
+using namespace std;
+int main()
+{
+int t;
+cin>>t;
+while(t--){
+int n;
+cin>>n;
+int arr[n];
+for(int i=0;i<n;i++){
+cin>>arr[i];
+}
+sort(arr,arr+n);
+int l=1,sum=0;
+for(int i=1;i<n;i++){
+if(arr[i]!=arr[i-1]){
+l++;
+sum+=l;
+}
+else sum+=l;
+}
+cout<<sum+1<<endl;
+}
+return 0;
+cout<<"int s[MAXN]; void sol() read(s[i])";
+}
+-----------------------------------------------------------------------------------------------
+Sundar has developed an Android app. He has a list of potential purchasers for his app.
+#include <iostream>
+#include <algorithm>
+using namespace std;
+int main()
+{
+int n;
+cin>>n;
+int arr[n];
+for(int i=0;i<n;i++){
+cin>>arr[i];
+}
+sort(arr,arr+n);
+for(int i=0;i<n;i++){
+arr[i]=arr[i](n-i);
+}
+cout<<max_element(arr,arr+n);
+return 0;
+}
+Anbu is a boy from a small village, .....
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{ int t;
+cin>>t;
+while(t--)
+{
+int n,br1=0,br2=0;
+cin>>n;
+string str;
+cin>>str;
+for(int i=0;i<n;i++)
+{
+if(str[i]!=str[i+1]&&str[i]=='B')
+br1++;
+if(str[i]!=str[i+1]&&str[i]=='W')
+br2++;
+}
+if(br1>br2) cout<<br2<<endl;
+else cout<<br1<<endl;
+}
+}
